@@ -146,7 +146,7 @@ We got to eat traditional German and Eastern European food in a unique location.
 ### Keynote talk by Jeff Hammond
 
 The second day started at 9am sharp to the keynote of Jeff Hammond (NVIDIA) entitled *"Modern MPI and what you need to know about it"*.
-He highlighted all the efforts in the MPI ABI standarization and modern developments in MPI.
+He highlighted all the efforts in the MPI ABI standardization and modern developments in MPI.
 Definitely worth a re-watch [here](https://youtu.be/2-4ph2vryiw?list=PLhnGtSmEGEQi5xRViGJwLqZg3HMQJG0QM)
 (slides available [here](https://users.ugent.be/~kehoste/eum25/014_eum25_keynote_JeffHammond_MPI.pdf)).
 
@@ -199,7 +199,7 @@ official [Michael Schumacher Kart & Event Center](https://www.ms-kartcenter.de/)
 ![image](eum25_day2-08.webp)
 
 
-Participants recieved a brief training on the procedures and safety as the track runs alongside real Formula 1 cars! :racing_car: :checkered_flag:
+Participants received a brief training on the procedures and safety as the track runs alongside real Formula 1 cars! :racing_car: :checkered_flag:
 
 They were split in 3 groups, each group would have to do a classification race to determine starting order, followed by 15 minutes of real race to qualify for the final race.
 The 4 fastest drivers from each group would make it to a final competition.
