@@ -13,7 +13,9 @@ hide:
 This first blog post reports on the [10th EasyBuild User Meeting (EUM'25)](https://easybuild.io/eum25),
 which took place 25-27 March 2025 at the Jülich Supercomputing Centre (JSC) in Germany.
 
-![image](eum25_group-picture.webp)
+<figure markdown="span">
+![](eum25_group-picture.webp){width=85%}
+</figure>
 
 Slides of all talks are available [here](https://easybuild.io/eum25/#program),
 recordings via [YouTube](https://www.youtube.com/playlist?list=PLhnGtSmEGEQi5xRViGJwLqZg3HMQJG0QM).
@@ -132,15 +134,22 @@ The group dinner, sponsored by [Jülich Supercomputing Centre (JSC)](https://www
 
 We got to eat traditional German and Eastern European food in a unique location. :hamburger: :beer:
 
-![image](eum25_day1-11.webp)
+<figure markdown="span">
+![](eum25_day1-11.webp)
+</figure>
 ![image](eum25_day1-12.webp)
 ![image](eum25_day1-13.webp)
 ![image](eum25_day1-14.webp)
 
+<figure markdown="span">
 ![image](eum25_day1-15.webp)
+</figure>
+<figure markdown="span">
 ![image](eum25_day1-16.webp)
+</figure>
+<figure markdown="span">
 ![image](eum25_day1-17.webp)
-
+</figure>
 
 -----
 
@@ -184,6 +193,8 @@ Caspar van Leeuwen (SURF), Bob Dröge (Universiteit Groningen), Cintia Willemyns
 
 ![image](eum25_day2-04.webp)
 
+### Group picture
+
 Before heading out to the social event, the traditional group picture was taken.
 The sun made a special appearance for the last pics, making it very difficult to keep our eyes open.
 
@@ -226,7 +237,9 @@ After a very intense and tight neck-to-neck race, the winners made it to the pod
 ![image](eum25_day2-16.webp)
 
 The 3 winners got a nice trophy to take home. :trophy:
+<figure markdown="span">
 ![image](eum25_day2-17.webp)
+</figure>
 
 A well deserved group dinner had place right afterwards at "La Piazza" restaurant right above the karting center, sponsored by [Microsoft](https://azure.microsoft.com/en-us) +
 [NVIDIA](https://www.nvidia.com/) + [INUITS](https://inuits.eu/).
@@ -243,7 +256,9 @@ which emerged from the EasyBuild community.
 
 Lara Peeters (Ghent University) both introduced the topic and gave a hands-on demo in just 11 minutes, thus showcasing how easy it really is to use EESSI.
 
+<figure markdown="span">
 ![image](eum25_day3-01.webp)
+</figure>
 
 ### MultiXscale + CI/CD with EESSI
 
@@ -344,12 +359,26 @@ and most importantly with a lot of new knowledge and some lovely memories to tak
 
 ![image](eum25_day3-16.webp)
 
-A heartfelt thank you to everybody attending the event and especially to the sponsors.
+A heartfelt thank you to everybody attending the event, and to the generous sponsors who made it possible.
+
+<figure markdown="span">
+<a href="https://www.fz-juelich.de/en/ias/jsc">![](jsc-logo.webp)</a>
+</figure>
+<figure markdown="span">
+<a href="https://www.doitnowgroup.com/">![](doitnow-logo.webp)</a>
+</figure>
+<figure markdown="span">
+<a href="https://inuits.eu/">![INUITS](inuits-logo.webp)</a>
+</figure>
+<figure markdown="span">
+<a href="https://azure.microsoft.com/en-us">![Microsoft](microsoft-logo.webp)</a>
+</figure>
+<figure markdown="span">
+<a href="https://www.nvidia.com/">![NVIDIA](nvidia-logo.webp)</a>
+</figure>
+
+---
 
 The 10th EasyBuild User Meeting will be very difficult to top... :heart:
 
-![image](jsc-logo.webp)
-![image](doitnow-logo.webp)
-![image](inuits-logo.webp)
-![image](microsoft-logo.webp)
-![image](nvidia-logo.webp)
+But we are already starting to consider potential locations for the 11th edition next year!
