@@ -15,6 +15,7 @@ hide:
 ### Attendance 
 Even with the challenge of having to reach the Jülich Supercomputing Center, the on-site seats for the event were fully booked a month before the event! 
 
+![image](eum25_day1-00.webp)
 ![image](eum25_day1-01.webp)
 
 
