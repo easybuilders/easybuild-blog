@@ -1,0 +1,891 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../../img/logos/EasyBuild.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>10th EasyBuild User Meeting (EUM'25) - EasyBuild blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#10th-easybuild-user-meeting-eum25" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="EasyBuild blog" class="md-header__button md-logo" aria-label="EasyBuild blog" data-md-component="logo">
+      
+  <img src="../../../../img/logos/EasyBuild.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            EasyBuild blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              10th EasyBuild User Meeting (EUM'25)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="EasyBuild blog" class="md-nav__button md-logo" aria-label="EasyBuild blog" data-md-component="logo">
+      
+  <img src="../../../../img/logos/EasyBuild.png" alt="logo">
+
+    </a>
+    EasyBuild blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#day-0-monday-24-march-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day 0 (Monday 24 March 2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Day 0 (Monday 24 March 2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#travel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Travel
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#day-1-tuesday-25-march-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day 1 (Tuesday 25 March 2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Day 1 (Tuesday 25 March 2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#welcome" class="md-nav__link">
+    <span class="md-ellipsis">
+      Welcome
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-of-the-union" class="md-nav__link">
+    <span class="md-ellipsis">
+      State of the Union
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#easybuild-50" class="md-nav__link">
+    <span class="md-ellipsis">
+      EasyBuild 5.0
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#easybuild-site-talks" class="md-nav__link">
+    <span class="md-ellipsis">
+      EasyBuild site talks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-talks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical talks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lmod-vs-environment-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lmod vs Environment Modules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#beyond-easybuild" class="md-nav__link">
+    <span class="md-ellipsis">
+      Beyond EasyBuild
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sponsored-group-dinner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sponsored group dinner
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#day-2-wednesday-26-march-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day 2 (Wednesday 26 March 2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Day 2 (Wednesday 26 March 2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keynote-talk-by-jeff-hammond" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keynote talk by Jeff Hammond
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-easybuild-talks" class="md-nav__link">
+    <span class="md-ellipsis">
+      More EasyBuild talks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#talks-by-jsc" class="md-nav__link">
+    <span class="md-ellipsis">
+      Talks by JSC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#easybuild-site-talks_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      EasyBuild site talks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-picture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Group picture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sponsored-social-event-dinner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sponsored social event + dinner
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#day-3-thursday-27-march-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Day 3 (Thursday 27 March 2025)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Day 3 (Thursday 27 March 2025)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-eessi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to EESSI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multixscale-cicd-with-eessi" class="md-nav__link">
+    <span class="md-ellipsis">
+      MultiXscale + CI/CD with EESSI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eurohpc-federation-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      EuroHPC Federation Platform
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maintainers-group-picture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maintainers group picture
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cernvm-fs" class="md-nav__link">
+    <span class="md-ellipsis">
+      CernVM-FS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improving-nvidia-gpu-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      Improving NVIDIA GPU support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eessi-test-suite" class="md-nav__link">
+    <span class="md-ellipsis">
+      EESSI test suite
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recruiting-and-retaining-it-talent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recruiting and retaining IT talent
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#talks-by-jsc_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Talks by JSC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jsc-datacenter-tour" class="md-nav__link">
+    <span class="md-ellipsis">
+      JSC datacenter tour
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#closing-group-dinner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Closing group dinner
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../.." class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://avatars.githubusercontent.com/u/47674829?v=4" alt="Helena Vela Beltran">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Helena Vela Beltran
+                        
+                      </strong>
+                      <br>
+                      Do IT Now
+                    </span>
+                  </div>
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://avatars.githubusercontent.com/u/620876?v=4" alt="Kenneth Hoste">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Kenneth Hoste
+                        
+                      </strong>
+                      <br>
+                      HPC-UGent
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2025-03-28 00:00:00+00:00" class="md-ellipsis">March 28, 2025</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              12 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+
+<h1 id="10th-easybuild-user-meeting-eum25">10th EasyBuild User Meeting (EUM'25)</h1>
+<p>This first blog post reports on the <a href="https://easybuild.io/eum25">10th EasyBuild User Meeting (EUM'25)</a>,
+which took place 25-27 March 2025 at the Jülich Supercomputing Centre (JSC) in Germany.</p>
+<figure>
+<img alt="" src="../../eum25_group-picture.webp" width="85%" />
+</figure>
+<p>Slides of all talks are available <a href="https://easybuild.io/eum25/#program">here</a>,
+recordings via <a href="https://www.youtube.com/playlist?list=PLhnGtSmEGEQi5xRViGJwLqZg3HMQJG0QM">YouTube</a>.</p>
+<!-- more -->
+
+<h2 id="day-0-monday-24-march-2025">Day 0 (Monday 24 March 2025)</h2>
+<h3 id="travel">Travel</h3>
+<p>Even though it was a bit challenging to reach Jülich, seats for attending the event in-person were fully booked a month before,
+before the program was made public!</p>
+<p>50 people coming by all means possible (car, train, plane, bus, minibus and even bike) made it to the venue,
+in addition to 90 attendees who registered to follow the event online.</p>
+<p>Cintia, Sam, and Alex came by bike from Aachen to Jülich.</p>
+<p><img alt="" src="../../eum25_day0-00.webp" />
+<img alt="" src="../../eum25_day0-01.webp" /></p>
+<p>At some point a rainbow was even guiding them!</p>
+<p><img alt="" src="../../eum25_day0-02.webp" /></p>
+<hr />
+<h2 id="day-1-tuesday-25-march-2025">Day 1 (Tuesday 25 March 2025)</h2>
+<h3 id="welcome">Welcome</h3>
+<p>In-person attendees had a first hour of meet and greet on Tuesday morning.
+Three different coffee mugs and a wide variety of stickers were available to bring back home,
+free of cost thanks to the generous sponsoring of <a href="https://azure.microsoft.com/en-us">Microsoft</a> +
+<a href="https://www.nvidia.com/">NVIDIA</a> + <a href="https://inuits.eu/">INUITS</a>.</p>
+<p><img alt="image" src="../../eum25_day1-01.webp" /></p>
+<p>Once everybody chose a seat, the 10th EasyBuild User Meeting was ready to start...</p>
+<p><img alt="image" src="../../eum25_day1-02.webp" /></p>
+<p>During the welcome session, it was revealed that the social event on Wednesday would be competitive karting <img alt="🏎" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f3ce.svg" title=":racing_car:" /> at
+the <a href="https://www.ms-kartcenter.de/">Michael Schumacher Karting Center</a>, fully sponsored by <a href="https://www.doitnowgroup.com">Do IT Now</a>!</p>
+<p><img alt="image" src="../../eum25_day1-03.webp" /></p>
+<h3 id="state-of-the-union">State of the Union</h3>
+<p>First day of talks was packed, starting with the usual <em>EasyBuild State of the Union</em> presentation by Kenneth Hoste
+(Ghent University) -- slides available <a href="https://users.ugent.be/~kehoste/eum25/000_eum25_welcome.pdf">here</a>.</p>
+<p><img alt="image" src="../../eum25_day1-04.webp" /></p>
+<p>The big highlight surrounding this event is the release of <a href="https://docs.easybuild.io/easybuild-v5/"><strong>EasyBuild 5.0</strong></a> <img alt="🎉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f389.svg" title=":tada:" /> .
+Congratulations to all contributors and maintainers for the major milestone!</p>
+<p>Some other crazy news from the EasyBuild community is the launch of the <a href="https://shop.easybuild.io">EasyBuild + EESSI shop</a>.
+All the profits generated by the shop will be destined to cover future events merchandise.</p>
+<h3 id="easybuild-50">EasyBuild 5.0</h3>
+<p>EasyBuild version 5.0 was covered in detail by the following talk, given by Simon Branford (University of Birmingham), EB maintainer.
+He explained all the breaking changes, updates and new features. It is expected from now on to make a major release of EasyBuild every two years.</p>
+<p><img alt="image" src="../../eum25_day1-05.webp" /></p>
+<h3 id="easybuild-site-talks">EasyBuild site talks</h3>
+<p>John Dey (Fred Hutch) and Bart Oldeman (Digital Research Alliance of Canada) gave their site talks illustrating the use of EasyBuild in
+their respective institutions, remarking some <a href="https://github.com/fizwit/easy_update"><code>easy_update</code></a> status updates, new tools to build
+containers with EasyBuild, user tendencies, special software stacks and their site-specific systems.</p>
+<h3 id="technical-talks">Technical talks</h3>
+<p>After lunch, a whole round of technical talks filled the afternoon. Starting with Alex Domingo (a.k.a <a href="https://github.com/lexming"><code>@lexming</code></a>,
+also an EasyBuild maintainer, Vrije Universiteit Brussel) lecturing on <em>"Controlling the shell environment in EasyBuild v5.0"</em>, with some amazing
+improvements on how to handle environment variables and how they affect the module files in this new EasyBuild release.</p>
+<p>Then, Jan André Reuter (JSC) gave tips and tricks on how to contribute (and not break) EasyBuild releases. <img alt="😅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f605.svg" title=":sweat_smile:" /></p>
+<p><img alt="image" src="../../eum25_day1-07.webp" /></p>
+<h3 id="lmod-vs-environment-modules">Lmod vs Environment Modules</h3>
+<p>A friendly competition followed with the two presentations of Robert McLay (TACC - Lmod) and Xavier Delaruelle (CEA - Environment Modules),
+each one presenting updates on the implementation of environment modules they lead.</p>
+<p><img alt="image" src="../../eum25_day1-08.webp" /><em>They got along during the dinner!</em></p>
+<h3 id="beyond-easybuild">Beyond EasyBuild</h3>
+<p>After the coffee break Alexander Grund (TU Dresden) started the session showcasing their work on secure workflows for shared HPC systems
+to handle sensitive data with minimal performance overhead.</p>
+<p>In the next talk, Jayesh Badwaik (JSC) addressed reproducibility challenges in continuous benchmarking within the early access program for JUPITER.</p>
+<p>Next up was Michael Klemm (AMD) to present an insightful talk about the AMD ROCm™ Platform, providing an overview of
+its open-source stack and how it enables high-performance computing with AMD Instinct™ accelerators.</p>
+<p><img alt="image" src="../../eum25_day1-09.webp" /></p>
+<p>Moving on another short break, two remote talks closed the first day. The first one introducing Open OnDemand, presented by the Ohio Supercomputing Center team.</p>
+<p>The second one was the Spack status update and introduction to the <a href="https://hpsf.io/">High Performance Software Foundation (HPSF)</a>, given by the same Todd Gamblin.
+He promised (again) that Spack v1.0 is coming soon (right for the ISC'25, so mark your calendar!).</p>
+<p><img alt="image" src="../../eum25_day1-10.webp" /></p>
+<h3 id="sponsored-group-dinner">Sponsored group dinner</h3>
+<p>The group dinner, sponsored by <a href="https://www.fz-juelich.de/en/ias/jsc">Jülich Supercomputing Centre (JSC)</a> was at Restaurant Hexenturm at downtown Jülich.</p>
+<p>We got to eat traditional German and Eastern European food in a unique location. <img alt="🍔" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f354.svg" title=":hamburger:" /> <img alt="🍺" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f37a.svg" title=":beer:" /></p>
+<figure>
+<img alt="" src="../../eum25_day1-11.webp" />
+</figure>
+<p><img alt="image" src="../../eum25_day1-12.webp" />
+<img alt="image" src="../../eum25_day1-13.webp" />
+<img alt="image" src="../../eum25_day1-14.webp" /></p>
+<figure>
+<img alt="image" src="../../eum25_day1-15.webp" />
+</figure>
+<figure>
+<img alt="image" src="../../eum25_day1-16.webp" />
+</figure>
+<figure>
+<img alt="image" src="../../eum25_day1-17.webp" />
+</figure>
+<hr />
+<h2 id="day-2-wednesday-26-march-2025">Day 2 (Wednesday 26 March 2025)</h2>
+<h3 id="keynote-talk-by-jeff-hammond">Keynote talk by Jeff Hammond</h3>
+<p>The second day started at 9am sharp to the keynote of Jeff Hammond (NVIDIA) entitled <em>"Modern MPI and what you need to know about it"</em>.
+He highlighted all the efforts in the MPI ABI standardization and modern developments in MPI.
+Definitely worth a re-watch <a href="https://youtu.be/2-4ph2vryiw?list=PLhnGtSmEGEQi5xRViGJwLqZg3HMQJG0QM">here</a>
+(slides available <a href="https://users.ugent.be/~kehoste/eum25/014_eum25_keynote_JeffHammond_MPI.pdf">here</a>).</p>
+<p><img alt="image" src="../../eum25_day2-01.webp" /></p>
+<h3 id="more-easybuild-talks">More EasyBuild talks</h3>
+<p>Talks continued with Davide Grassano (CECAM) presenting <em>"A new LLVM toolchain"</em> for EasyBuild.
+He explained how the compiler infrastructure works, and compared existing features and performance against a current GCC toolchain.</p>
+<p><img alt="image" src="../../eum25_day2-02.webp" /></p>
+<p>After the coffee break, Bart Oldeman lectured about the linear algebra infrastructure in EasyBuild's toolchains,
+how they work and how to squeeze them to get the best performance. Afterwards, Jens Henrik Göbbert (JSC) spoke
+about OpenGL support in EasyBuild, highlighting how libglvnd works to integrate OpenGL API calls across different vendors.</p>
+<h3 id="talks-by-jsc">Talks by JSC</h3>
+<p>After lunch, Brian Wylie (JSC) showcased the work being done by the <a href="https://pop-coe.eu/">Performance Optimisation and Productivity (POP) EuroHPC Centre-of-Excellence</a>.
+Closely related, Markus Geimer (JSC) introduced JSC's in-house tools to trace and do performance analysis of HPC applications.
+Afterwards, Alexandre Strube (JSC) explored the <em>State of LLMs</em> in a funny and wonderful talk.</p>
+<p>Alexandre also won the hidden "best T-shirt while presenting at the EasyBuild User Meeting" contest -- can you tell why?</p>
+<p><img alt="image" src="../../eum25_day2-03.webp" /></p>
+<h3 id="easybuild-site-talks_1">EasyBuild site talks</h3>
+<p>The closing presentations for day 2 were again a series of EasyBuild site talks. Each speaker disclosed how they use EasyBuild in their institutions,
+and discussed some common problems.
+Caspar van Leeuwen (SURF), Bob Dröge (Universiteit Groningen), Cintia Willemyns (Vrije Universiteit Brussel) and Helena Vela Beltran (Do IT Now) had the honor to bring us to the social event.</p>
+<p><img alt="image" src="../../eum25_day2-04.webp" /></p>
+<h3 id="group-picture">Group picture</h3>
+<p>Before heading out to the social event, the traditional group picture was taken.
+The sun made a special appearance for the last pics, making it very difficult to keep our eyes open.</p>
+<p><img alt="image" src="../../eum25_group-picture.webp" /></p>
+<h3 id="sponsored-social-event-dinner">Sponsored social event + dinner</h3>
+<p>The karting competition, sponsored by <a href="https://www.doitnowgroup.com">Do IT Now</a>, took place in the
+official <a href="https://www.ms-kartcenter.de/">Michael Schumacher Kart &amp; Event Center</a>, only 25 min away from JSC.</p>
+<p><img alt="image" src="../../eum25_day2-06.webp" />
+<img alt="image" src="../../eum25_day2-07.webp" />
+<img alt="image" src="../../eum25_day2-08.webp" /></p>
+<p>Participants received a brief training on the procedures and safety as the track runs alongside real Formula 1 cars! <img alt="🏎" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f3ce.svg" title=":racing_car:" /> <img alt="🏁" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f3c1.svg" title=":checkered_flag:" /></p>
+<p>They were split in 3 groups, each group would have to do a classification race to determine starting order, followed by 15 minutes of real race to qualify for the final race.
+The 4 fastest drivers from each group would make it to a final competition.</p>
+<p><img alt="image" src="../../eum25_day2-09.webp" />
+<img alt="image" src="../../eum25_day2-10.webp" /></p>
+<p>The people that were not driving could check out the intense racing while having a chat and enjoying a (non-alcoholic) drink -- don't drink and drive!</p>
+<p><img alt="image" src="../../eum25_day2-11.webp" />
+<img alt="image" src="../../eum25_day2-12.webp" />
+<img alt="image" src="../../eum25_day2-13.webp" />
+<img alt="image" src="../../eum25_day2-14.webp" /></p>
+<p>After a very intense and tight neck-to-neck race, the winners made it to the podium! <img alt="🍾" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f37e.svg" title=":champagne:" /></p>
+<p><img alt="image" src="../../eum25_day2-15.webp" />
+<img alt="image" src="../../eum25_day2-16.webp" /></p>
+<p>The 3 winners got a nice trophy to take home. <img alt="🏆" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f3c6.svg" title=":trophy:" /></p>
+<figure>
+<img alt="image" src="../../eum25_day2-17.webp" />
+</figure>
+<p>A well deserved group dinner had place right afterwards at "La Piazza" restaurant right above the karting center, sponsored by <a href="https://azure.microsoft.com/en-us">Microsoft</a> +
+<a href="https://www.nvidia.com/">NVIDIA</a> + <a href="https://inuits.eu/">INUITS</a>.</p>
+<hr />
+<h2 id="day-3-thursday-27-march-2025">Day 3 (Thursday 27 March 2025)</h2>
+<h3 id="introduction-to-eessi">Introduction to EESSI</h3>
+<p>The 3rd and last day of the 10th EasyBuild User Meeting was focused on <a href="https://eessi.io">EESSI,
+the European Environment for Scientific Software Installations</a>,
+which emerged from the EasyBuild community.</p>
+<p>Lara Peeters (Ghent University) both introduced the topic and gave a hands-on demo in just 11 minutes, thus showcasing how easy it really is to use EESSI.</p>
+<figure>
+<img alt="image" src="../../eum25_day3-01.webp" />
+</figure>
+<h3 id="multixscale-cicd-with-eessi">MultiXscale + CI/CD with EESSI</h3>
+<p>Next up, Alan O'Cais (Universitat de Barcelona, CECAM) presented the work being done by the <a href="https://multixscale.eu">MultiXscale EuroHPC Centre-of-Excellence</a>.
+Pedro Santos Neves (Universiteit Groningen) followed right after showcasing how to do CI/CD via EESSI.</p>
+<p><img alt="image" src="../../eum25_day3-02.webp" /></p>
+<h3 id="eurohpc-federation-platform">EuroHPC Federation Platform</h3>
+<p>After a coffee break, three remote talks took place. Henrik Nortamo (CSC.fi) presented the EuroHPC Federation Platform, explaining its scope and various components.</p>
+<p><img alt="image" src="../../eum25_day3-03.webp" /></p>
+<p>Right after followed by a presentation <a href="https://docs.lexis.tech">LEXIS</a> by Martin Golasowski (IT4Innovations), about easy access to HPC workflows and data management,
+and a talk on <a href="https://waldur.com">Waldur</a>, by Ilja Livenson (University of Tartu), an open-source cloud manager platform with a marketplace.</p>
+<h3 id="maintainers-group-picture">Maintainers group picture</h3>
+<p>Before starting lunch, the EasyBuild maintainers took the opportunity to have their own group picture.
+It was the first time that 14 EasyBuild maintainers were present in the same room!</p>
+<p><img alt="image" src="../../eum25_maintainers-group-picture.webp" /></p>
+<p>Adam couldn't join the event in-person, but did manage to sneak into the picture remotely.</p>
+<h3 id="cernvm-fs">CernVM-FS</h3>
+<p>After the lunch break, Valentin Volkl (CERN) unpacked the recent developments of CernVM-FS,
+the tool on which EESSI relies heavily for worldwide distribution of the software installations
+it provides.</p>
+<p><img alt="image" src="../../eum25_day3-04.webp" /></p>
+<h3 id="improving-nvidia-gpu-support">Improving NVIDIA GPU support</h3>
+<p>Pavel Grochal and Anthony Beerens (INUITS) gave their <em>"Improving NVIDIA GPU support in EESSI"</em> presentation,
+showcasing the work they did with EESSI in the Microsoft Azure cloud.</p>
+<p><img alt="image" src="../../eum25_day3-05.webp" /></p>
+<h3 id="eessi-test-suite">EESSI test suite</h3>
+<p>Caspar gave the last talk that focused on EESSI,
+and challenged the attendees to try the EESSI test suite hands-on.</p>
+<p><img alt="image" src="../../eum25_day3-06.webp" />
+<img alt="image" src="../../eum25_day3-07.webp" /></p>
+<h3 id="recruiting-and-retaining-it-talent">Recruiting and retaining IT talent</h3>
+<p>Jörg Saßmannshausen (Imperial College London) started an open discussion on how to recruit and retain IT talents in Research Computing.
+He highlighted the value of recognition, especially with people who are taking their first steps in IT, and discussed other programs or
+incentives to attract people to positions in research, having to compete with positions with higher salary inside the IT environment.</p>
+<p><img alt="image" src="../../eum25_day3-08.webp" /></p>
+<h3 id="talks-by-jsc_1">Talks by JSC</h3>
+<p>After a short break, four more talks by JSC staff followed.</p>
+<p>Sebastian Achilles talked about the upcoming <em>Test infrastructure for EasyBuild</em>,
+and Madita Willsch shared recent developments on quantum computing by presenting JUNIQ.</p>
+<p>Damian Alvarez gave an interesting keynote-style talk entitled <a href="https://www.youtube.com/watch?v=dP8H16dfYs0&amp;list=PLhnGtSmEGEQi5xRViGJwLqZg3HMQJG0QM&amp;index=33"><em>"JUPITER - State of the matters"</em></a>, explaining the process and decisions taken to make the first exascale European supercomputer <a href="https://www.fz-juelich.de/en/ias/jsc/jupiter">JUPITER</a> a reality.
+He covered the tender procurement process, discussed the bumps in the road, and presented technical details of the system.</p>
+<p><img alt="image" src="../../eum25_day3-09.webp" /></p>
+<p>The talks concluded with the heartwarming presentation by Bernd Mohr, entitled <em>"Four decades of HPC"</em>,
+in which he shared his experience in the evolution of HPC systems since he started working on the field 40 years ago. He even brought some punch cards and old blades!</p>
+<p><img alt="image" src="../../eum25_day3-10.webp" />
+<img alt="image" src="../../eum25_day3-11.webp" /></p>
+<h3 id="jsc-datacenter-tour">JSC datacenter tour</h3>
+<p>The day finished with a tour of the JSC datacenters and a visit (from outside) to JUPITER which was still under construction.
+Separated in 3 groups, attendees were guided by Sebastian, Damian, and Bernd to visit the JSC compute infrastructure.</p>
+<p><img alt="image" src="../../eum25_day3-12.webp" />
+<img alt="image" src="../../eum25_day3-13.webp" />
+<img alt="image" src="../../eum25_day3-14.webp" />
+<img alt="image" src="../../eum25_day3-15.webp" /></p>
+<h3 id="closing-group-dinner">Closing group dinner</h3>
+<p>The final group dinner, also sponsored by <a href="https://azure.microsoft.com/en-us">Microsoft</a> +
+<a href="https://www.nvidia.com/">NVIDIA</a> + <a href="https://inuits.eu/">INUITS</a>, took place in downtown Jülich.</p>
+<p>Everyone was exhausted after an intense couple of days, but left happy with some coffee mugs and stickers,
+and most importantly with a lot of new knowledge and some lovely memories to take home.</p>
+<p><img alt="image" src="../../eum25_day3-16.webp" /></p>
+<p>A heartfelt thank you to everybody attending the event, and to the generous sponsors who made it possible.</p>
+<figure>
+<a href="https://www.fz-juelich.de/en/ias/jsc"><img alt="" src="../../jsc-logo.webp" /></a>
+</figure>
+<figure>
+<a href="https://www.doitnowgroup.com/"><img alt="" src="../../doitnow-logo.webp" /></a>
+</figure>
+<figure>
+<a href="https://inuits.eu/"><img alt="INUITS" src="../../inuits-logo.webp" /></a>
+</figure>
+<figure>
+<a href="https://azure.microsoft.com/en-us"><img alt="Microsoft" src="../../microsoft-logo.webp" /></a>
+</figure>
+<figure>
+<a href="https://www.nvidia.com/"><img alt="NVIDIA" src="../../nvidia-logo.webp" /></a>
+</figure>
+<hr />
+<p>The 10th EasyBuild User Meeting will be very difficult to top... <img alt="❤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2764.svg" title=":heart:" /></p>
+<p>But we are already starting to consider potential locations for the 11th edition next year!</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>
