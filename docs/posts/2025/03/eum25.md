@@ -15,14 +15,17 @@ which took place 25-27 March 2025 at the Jülich Supercomputing Centre (JSC) in 
 
 ![image](eum25_group-picture.webp)
 
+Slides of all talks are available [here](https://easybuild.io/eum25/#program),
+recordings via [YouTube](https://www.youtube.com/playlist?list=PLhnGtSmEGEQi5xRViGJwLqZg3HMQJG0QM).
+
 <!-- more -->
 
 ## Day 0 (Monday 24 March 2025)
 
 ### Travel
 
-Even though it was a bit challenging to reach Jülich, seats for in-person attendance for the event were fully booked a month before the event,
-even before the program was made public!
+Even though it was a bit challenging to reach Jülich, seats for attending the event in-person were fully booked a month before,
+before the program was made public!
 
 50 people coming by all means possible (car, train, plane, bus, minibus and even bike) made it to the venue,
 in addition to 90 attendees who registered to follow the event online.
