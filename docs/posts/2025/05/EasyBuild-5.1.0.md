@@ -178,7 +178,7 @@ For more details, see the [overview of common toolchains](https://docs.easybuild
 
 ## Notable bug fixes
 
-Next to the highlights covered above, there are a couple of small yet worth to mention bug fixes included in EasyBuild
+Beyond the highlights covered above, there are a couple of small bug fixes included in EasyBuild
 v5.1.0:
 
 - The `pip check` command is now executed only *once* in the sanity check for an installation that involves Python packages, which makes sense since this is a global check (not for a specific Python package).
@@ -190,5 +190,5 @@ v5.1.0:
   were raised during the test step were not actually being ignored. This rendered `--ignore-test-failure` useless for
   ignoring a handful of failing tests when installing PyTorch, for example.
   This regression was fixed in EasyBuild v5.1.0.
-- Several small issues has been fixed in the custom easyblock for LLVM, which was thoroughly revised in EasyBuild
+- Several small issues have been fixed in the custom easyblock for LLVM, which was thoroughly revised in EasyBuild
   v5.0.0.
