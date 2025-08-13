@@ -34,9 +34,9 @@ asciinema(
     [0, "View EasyBuild version"],
     [11, "Start installation"],
     [22, "Build failure"],
-    [35, "Enter interactive debug environment"],
-    [40, "Repeat failed command"],
-    [48, "Explore environment"],
+    [32, "Enter interactive debug environment"],
+    [34, "Repeat failed command"],
+    [46, "Explore environment"],
     [57, "Exit environment"]
   ],
 )
@@ -49,9 +49,9 @@ The compilation failure is because of an incompatibility between the older `binu
 1. *[00:00]* View EasyBuild version
 1. *[00:11]* Installing `bzip2` with EasyBuild: `eb bzip2-1.0.8.eb` (all dependencies have been pre-installed);
 1. *[00:22]* Installation fails in `build` step;
-1. *[00:35]* Enter interactive debug environment by running the `cmd.sh` script;
-1. *[00:40]* Repeat the failed command from shell history (arrow up), see why the build failed;
-1. *[00:48]* Explore the environment:
+1. *[00:32]* Enter interactive debug environment by running the `cmd.sh` script;
+1. *[00:34]* Repeat the failed command from shell history (arrow up), see why the build failed;
+1. *[00:46]* Explore the environment:
     - Print the working directory (`pwd`)
     - List the loaded modules (`module list`);
     - Check the value of the environment variable `CC` (`echo $CC`);
