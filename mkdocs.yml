@@ -3,6 +3,10 @@ theme:
   name: material
   logo: img/logos/EasyBuild.png
   favicon: img/logos/EasyBuild.png
+extra_css:
+  - asciinema/asciinema-player-3.10.0.css  # see https://github.com/asciinema/asciinema-player/releases
+extra_javascript:
+  - asciinema/asciinema-player-3.10.0.min.js  # see https://github.com/asciinema/asciinema-player/releases
 nav:
 markdown_extensions:
   - attr_list
@@ -16,3 +20,7 @@ plugins:
       archive: false
       blog_dir: .
       blog_toc: true
+  - macros:
+      module_name: macros
+      on_error_fail: true
+      on_undefined: strict
