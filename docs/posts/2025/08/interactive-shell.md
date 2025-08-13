@@ -20,7 +20,7 @@ The new interactive shell feature provides a way to explore the build environmen
 
 ---
 
-## Demo
+## One-minute Demo
 
 In the following demo, `bzip2-1.0.8.eb` is being built on an Ubuntu 25.04 (Plucky Puffin) system.
 This build uses the `SYSTEM` toolchain, which means that the default system compiler provided by the OS is used - in this case GCC v13.3.0 (`gcc` command).
