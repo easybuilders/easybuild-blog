@@ -32,28 +32,31 @@ asciinema(
   cols=108,
   rows=25,
   markers=[
-    [0, "Start installation"],
-    [11, "Build failure"],
-    [15, "Enter interactive debug environment"],
-    [18, "Repeat failed command"],
-    [23, "Explore environment"],
-    [32, "Exit environment"]
+    [0, "View EasyBuild version"],
+    [10, "Start installation"],
+    [21, "Build failure"],
+    [35, "Enter interactive debug environment"],
+    [38, "Repeat failed command"],
+    [42, "Explore environment"],
+    [57, "Exit environment"]
   ],
 )
 }}
 
 The compilation failure is because of an incompatibility between the older `binutils` (v2.37, defined as build dependency in the easyconfig file) and the newer GCC.
 
-### The 6 stages of the demo
+### The 7 stages of the demo
 
-1. *[00:00]* Installing `bzip2` with EasyBuild: `eb bzip2-1.0.8.eb` (all dependencies have been pre-installed);
-2. *[00:11]* Installation fails in `build` step;
-3. *[00:15]* Enter interactive debug environment by running the `cmd.sh` script;
-1. *[00:18]* Repeat the failed command from shell history (arrow up), see why the build failed;
-1. *[00:23]* Explore the environment:
+1. *[00:00]* View EasyBuild version
+1. *[00:10]* Installing `bzip2` with EasyBuild: `eb bzip2-1.0.8.eb` (all dependencies have been pre-installed);
+1. *[00:21]* Installation fails in `build` step;
+1. *[00:35]* Enter interactive debug environment by running the `cmd.sh` script;
+1. *[00:38]* Repeat the failed command from shell history (arrow up), see why the build failed;
+1. *[00:42]* Explore the environment:
+    - Print the working directory (`pwd`)
     - List the loaded modules (`module list`);
     - Check the value of the environment variable `CC` (`echo $CC`);
-1. *[00:32]* Exiting the interactive debug environment by running `exit`;
+1. *[00:57]* Exiting the interactive debug environment by running `exit`;
 
 ### Avoiding this problem
 
