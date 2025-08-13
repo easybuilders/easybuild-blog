@@ -1,0 +1,492 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../../05/27/easybuild-5.1.0/">
+      
+      
+      
+      <link rel="icon" href="../../../../img/logos/EasyBuild.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Interactive Shell to Debug Failed Builds - EasyBuild blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.7e37652d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../asciinema/asciinema-player-3.10.0.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interactive-shell-to-debug-failed-builds" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="EasyBuild blog" class="md-header__button md-logo" aria-label="EasyBuild blog" data-md-component="logo">
+      
+  <img src="../../../../img/logos/EasyBuild.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            EasyBuild blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Interactive Shell to Debug Failed Builds
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="EasyBuild blog" class="md-nav__button md-logo" aria-label="EasyBuild blog" data-md-component="logo">
+      
+  <img src="../../../../img/logos/EasyBuild.png" alt="logo">
+
+    </a>
+    EasyBuild blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Asciinema
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Asciinema
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../asciinema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    asciinema
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#one-minute-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      One-minute Demo
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="One-minute Demo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-7-stages-of-the-demo" class="md-nav__link">
+    <span class="md-ellipsis">
+      The 7 stages of the demo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#avoiding-this-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Avoiding this problem
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../.." class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://avatars.githubusercontent.com/u/4967?v=4" alt="Simon Branford">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Simon Branford
+                        
+                      </strong>
+                      <br>
+                      University of Birmingham
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2025-08-13 00:00:00+00:00" class="md-ellipsis">August 13, 2025</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              2 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+
+<h1 id="interactive-shell-to-debug-failed-builds">Interactive Shell to Debug Failed Builds</h1>
+<p>One of the big enhancements in EasyBuild v5 is the support for starting an <a href="https://docs.easybuild.io/interactive-debugging-failing-shell-commands/">interactive shell to debug failed builds</a>
+by simply running the auto-generated <code>cmd.sh</code> script.</p>
+<p>We would all prefer that no installation ever fails, but there will be times when they do.</p>
+<p>The new interactive shell feature provides a way to explore the build environment and debug the failure.</p>
+<!-- more -->
+
+<hr />
+<h2 id="one-minute-demo">One-minute Demo</h2>
+<p>In the following demo, <code>bzip2-1.0.8.eb</code> is being built on an Ubuntu 25.04 (Plucky Puffin) system.
+This build uses the <code>SYSTEM</code> toolchain, which means that the default system compiler provided by the OS is used - in this case GCC v13.3.0 (<code>gcc</code> command).</p>
+<div id='asciinema-af1051bb-172b-4316-8c98-96865f001557' style='position: relative; box-sizing: border-box; width: 100%; z-index: 1'></div>
+<script>if (document.readyState === 'loading') {document.addEventListener('DOMContentLoaded', function() {AsciinemaPlayer.create('../../interactive-shell-demo-bzip.cast', document.getElementById('asciinema-af1051bb-172b-4316-8c98-96865f001557'), { 'theme': "dracula", 'markers': [[0, 'View EasyBuild version'], [11, 'Start installation'], [22, 'Build failure'], [32, 'Enter interactive debug environment'], [34, 'Repeat failed command'], [46, 'Explore environment'], [57, 'Exit environment']], 'cols': 108, 'loop': true, 'rows': 25, 'autoPlay': true, 'controls': "auto" });});} else {AsciinemaPlayer.create('../../interactive-shell-demo-bzip.cast', document.getElementById('asciinema-af1051bb-172b-4316-8c98-96865f001557'), { 'theme': "dracula", 'markers': [[0, 'View EasyBuild version'], [11, 'Start installation'], [22, 'Build failure'], [32, 'Enter interactive debug environment'], [34, 'Repeat failed command'], [46, 'Explore environment'], [57, 'Exit environment']], 'cols': 108, 'loop': true, 'rows': 25, 'autoPlay': true, 'controls': "auto" });}</script>
+
+<p>The compilation failure is because of an incompatibility between the older <code>binutils</code> (v2.37, defined as build dependency in the easyconfig file) and the newer GCC.</p>
+<h3 id="the-7-stages-of-the-demo">The 7 stages of the demo</h3>
+<ol>
+<li><em>[00:00]</em> View EasyBuild version</li>
+<li><em>[00:11]</em> Installing <code>bzip2</code> with EasyBuild: <code>eb bzip2-1.0.8.eb</code> (all dependencies have been pre-installed);</li>
+<li><em>[00:22]</em> Installation fails in <code>build</code> step;</li>
+<li><em>[00:32]</em> Enter interactive debug environment by running the <code>cmd.sh</code> script;</li>
+<li><em>[00:34]</em> Repeat the failed command from shell history (arrow up), see why the build failed;</li>
+<li><em>[00:46]</em> Explore the environment:<ul>
+<li>Print the working directory (<code>pwd</code>)</li>
+<li>List the loaded modules (<code>module list</code>);</li>
+<li>Check the value of the environment variable <code>CC</code> (<code>echo $CC</code>);</li>
+</ul>
+</li>
+<li><em>[00:57]</em> Exiting the interactive debug environment by running <code>exit</code>;</li>
+</ol>
+<h3 id="avoiding-this-problem">Avoiding this problem</h3>
+<p>If you experience this failure then you should be able to build <code>bzip2-1.0.8.eb</code> using both the OS <code>gcc</code> and <code>binutils</code>.
+You can instruct EasyBuild to do this using <a href="https://docs.easybuild.io/manipulating-dependencies/#filter_deps"><code>--filter-deps=binutils</code></a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="../../../../asciinema/asciinema-player-3.10.0.min.js"></script>
+      
+    
+  </body>
+</html>
