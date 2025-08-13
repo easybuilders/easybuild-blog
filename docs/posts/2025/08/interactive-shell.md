@@ -42,7 +42,7 @@ asciinema(
 )
 }}
 
-The comilation failure is because of an incompatibility between the older `binutils` (v2.37, defined as build dependency in the easyconfig file) and the newer GCC.
+The compilation failure is because of an incompatibility between the older `binutils` (v2.37, defined as build dependency in the easyconfig file) and the newer GCC.
 
 ### The 6 stages of the demo
 
