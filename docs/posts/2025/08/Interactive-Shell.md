@@ -9,7 +9,7 @@ hide:
 
 # Interactive Shell to Debug Failed Builds
 
-One of the big enhancements in EasyBuild v5 is the addition of an interactive shell to debug failed builds.
+One of the big enhancements in EasyBuild v5 is the addition of an [interactive shell to debug failed builds](https://docs.easybuild.io/interactive-debugging-failing-shell-commands/).
 
 We would all prefer that no build fails, but there will be times when they do.
 The new interactive shell feature provides a way to explore the build environment and debug the failure.
