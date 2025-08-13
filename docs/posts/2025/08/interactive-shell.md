@@ -28,16 +28,15 @@ This build uses the `SYSTEM` toolchain, which means that the default system comp
 {{
 asciinema(
   '../../interactive-shell-demo-bzip.cast',
-  idleTimeLimit=3,
   cols=108,
   rows=25,
   markers=[
     [0, "View EasyBuild version"],
-    [10, "Start installation"],
-    [21, "Build failure"],
+    [11, "Start installation"],
+    [22, "Build failure"],
     [35, "Enter interactive debug environment"],
-    [38, "Repeat failed command"],
-    [42, "Explore environment"],
+    [40, "Repeat failed command"],
+    [48, "Explore environment"],
     [57, "Exit environment"]
   ],
 )
@@ -48,11 +47,11 @@ The compilation failure is because of an incompatibility between the older `binu
 ### The 7 stages of the demo
 
 1. *[00:00]* View EasyBuild version
-1. *[00:10]* Installing `bzip2` with EasyBuild: `eb bzip2-1.0.8.eb` (all dependencies have been pre-installed);
-1. *[00:21]* Installation fails in `build` step;
+1. *[00:11]* Installing `bzip2` with EasyBuild: `eb bzip2-1.0.8.eb` (all dependencies have been pre-installed);
+1. *[00:22]* Installation fails in `build` step;
 1. *[00:35]* Enter interactive debug environment by running the `cmd.sh` script;
-1. *[00:38]* Repeat the failed command from shell history (arrow up), see why the build failed;
-1. *[00:42]* Explore the environment:
+1. *[00:40]* Repeat the failed command from shell history (arrow up), see why the build failed;
+1. *[00:48]* Explore the environment:
     - Print the working directory (`pwd`)
     - List the loaded modules (`module list`);
     - Check the value of the environment variable `CC` (`echo $CC`);

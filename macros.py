@@ -21,7 +21,6 @@ def define_env(env):
             "autoPlay": True,
             "controls": "\"auto\"",
             "loop": True,
-            "idleTimeLimit": 2,  # reduce inactivity in shell
             "cols": 110,  # define default width
             "rows": 20,  # define default height
             "theme": "\"dracula\""
