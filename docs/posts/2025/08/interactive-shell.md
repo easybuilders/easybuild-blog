@@ -1,7 +1,7 @@
 ---
 authors:
   - branfosj
-date: 2025-08-09
+date: 2025-08-13
 slug: interactive-shell
 hide:
   - navigation
@@ -42,7 +42,7 @@ asciinema(
 )
 }}
 
-The failure is because of an incompatibility between the older `binutils` (v2.37, defined as build dependency in the easyconfig file) and the newer GCC.
+The comilation failure is because of an incompatibility between the older `binutils` (v2.37, defined as build dependency in the easyconfig file) and the newer GCC.
 
 ### The 6 stages of the demo
 
