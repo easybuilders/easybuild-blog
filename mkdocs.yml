@@ -1,4 +1,6 @@
 site_name: EasyBuild blog
+site_description: "Blog for EasyBuild (https://easybuild.io)"
+site_url: https://blog.easybuild.io
 theme:
   name: material
   logo: img/logos/EasyBuild.png
@@ -16,3 +18,10 @@ plugins:
       archive: false
       blog_dir: .
       blog_toc: true
+  - rss:
+      match_path: posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags
