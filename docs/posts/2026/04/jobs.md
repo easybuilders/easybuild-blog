@@ -40,19 +40,19 @@ You can specify `--job-cores=X` to pick the size of your job.
 What if your job needs a GPU partition, or specify a TRES?
 Set them via environment variables
 
-```
+```bash
 SBATCH_GPUS_PER_NODE=H100:1 eb -r --job-cores=8 Foobar-1.2.3-foss-2025b-CUDA-12.8.0.eb
 ```
 
 In fact, why not make an alias for it?
 
-```
+```bash
 alias buildH100='SBATCH_GPUS_PER_NODE=H100:1 eb -r --job'
 ```
 
 Depending on your cluster, you may find the following environment variables useful:
 
-```
+```bash
 SBATCH_GPUS_PER_NODE
 SBATCH_CONSTRAINT
 SBATCH_PARTITION
@@ -74,7 +74,7 @@ export EASYBUILD_JOB_OUTPUT_DIR=$HOME/log_${CLUSTER_NAME}_${ARCH}/
 ## Debug failed builds
 
 If you have a problem build and the job logs isn't that useful, you can redirect tmpdir to persistent storage:
-```
+```bash
 --tmpdir=/your/centrestorage/path/eb-tmp
 ```
 
@@ -101,6 +101,7 @@ alias wq="watch -c \"squeue -u c3-builder -O jobid:10,tres-per-node:18,name:60,T
 
 Why not look at sacct as well? And color based on state?
 
+```python
 #!/usr/bin/env python3
 
 import subprocess
