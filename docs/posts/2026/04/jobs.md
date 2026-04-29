@@ -101,7 +101,7 @@ alias wq="watch -c \"squeue -u c3-builder -O jobid:10,tres-per-node:18,name:60,T
 
 Why not look at sacct as well? And color based on state?
 
-```python
+```python linenums="1"
 #!/usr/bin/env python3
 
 import subprocess
