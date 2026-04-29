@@ -13,6 +13,8 @@ This blogpost serves as inspiration and get you started running jobs based on so
 
 Do you want to conveniently build modules in a hurry? Then you will love `--job`  combined with `-r`.
 
+<!-- more -->
+
 ## What is does
 
 By specifying `eb -r --job Foobar-1.2.3-foss-2025b.eb` easybuild will
@@ -99,7 +101,6 @@ alias wq="watch -c \"squeue -u c3-builder -O jobid:10,tres-per-node:18,name:60,T
 
 Why not look at sacct as well? And color based on state?
 
-```python=
 #!/usr/bin/env python3
 
 import subprocess
@@ -282,7 +283,7 @@ example running with `watch --color q_advanced`:
 
 {{
 asciinema(
-  '../../watch-q.cast',
+  '../../jobs.cast',
   cols=108,
   rows=25,
   markers=[
