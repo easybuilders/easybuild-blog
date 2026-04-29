@@ -1,0 +1,725 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../../../2025/08/13/interactive-shell/">
+      
+      
+        <link rel="next" href="../../22/eum26-day2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../img/logos/EasyBuild.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>EUM'26 - Day 1 - EasyBuild blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../asciinema/asciinema-player-3.10.0.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#eum26-day-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="EasyBuild blog" class="md-header__button md-logo" aria-label="EasyBuild blog" data-md-component="logo">
+      
+  <img src="../../../../img/logos/EasyBuild.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            EasyBuild blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              EUM'26 - Day 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="EasyBuild blog" class="md-nav__button md-logo" aria-label="EasyBuild blog" data-md-component="logo">
+      
+  <img src="../../../../img/logos/EasyBuild.png" alt="logo">
+
+    </a>
+    EasyBuild blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Asciinema
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Asciinema
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../asciinema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    asciinema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kickstart-with-social-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kickstart with social event
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Kickstart with social event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#visit-of-deucalion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visit of Deucalion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guimaraes-city-tour" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guimarães city tour
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#welcome-at-the-venue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Welcome at the venue
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#easybuild-state-of-the-union" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EasyBuild State of the Union
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#easybuild-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EasyBuild Governance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hpsf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HPSF
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#easybuild-site-talks-part-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EasyBuild site talks, part 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../.." class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://avatars.githubusercontent.com/u/620876?v=4" alt="Kenneth Hoste">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Kenneth Hoste
+                        
+                      </strong>
+                      <br>
+                      HPC-UGent
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2026-04-21 00:00:00+00:00" class="md-ellipsis">April 21, 2026</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              7 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+
+<h1 id="eum26-day-1">EUM'26 - Day 1</h1>
+<p>The <a href="https://easybuild.io/eum26/">11th EasyBuild User Meeting (EUM'26)</a>
+took place in the beautiful city of Guimarães, the home of the EuroHPC supercomputer <em>Deucalion</em>.</p>
+<figure>
+<img alt="" src="../../eum26_group_picture.webp" width="100%" />
+</figure>
+<p>The EasyBuild community (and beyond) gathered again to learn more about recent developments,
+letting HPC sites that use EasyBuild showcase how they are doing so, attend presentations on
+projects (loosely) related to EasyBuild, and discuss the future of EasyBuild,
+including the (potential) impact of LLMs.</p>
+<p>The event was sponsored by <a href="https://acnca.pt/?lang=en">Centro Nacional de Computação Avançada (the Portuguese National Center
+for Advanced Computing)</a>, <a href="https://www.inesctec.pt/en">INESC TEC</a>,
+<a href="https://global.fujitsu/">Fujitsu</a>, <a href="https://www.doitnowgroup.com/">Do IT Now</a>,
+<a href="https://inuits.eu/">Inuits</a>, <a href="https://azure.microsoft.com/en-us">Microsoft Azure</a>,
+and <a href="https://www.nvidia.com/">NVIDIA</a>.</p>
+<p>This blog post covers the first day of the 3-day event, see also <a href="../../22/eum26-day2/">day 2</a> and <a href="../../23/eum26/">day 3</a>.</p>
+<!-- more -->
+
+<h2 id="kickstart-with-social-event">Kickstart with social event</h2>
+<p>The 11th EasyBuild User Meeting (EUM) started off a bit atypically: with a tour of the local EuroHPC supercomputer
+named <a href="https://www.macc.fccn.pt/resources#deucalion"><em>Deucalion</em></a>, followed by a guided tour of Guimarães,
+the host city for the event and also the birthplace of Portugal.</p>
+<p>Social activities have been part of the EUM program before, especially if you consider the group dinners,
+and the "team building"-like side steps we have done in recent years. See for example the karting race that was
+organised to celebrate the <a href="../../../../2025/03/28/eum25/">10th EasyBuild User Meeting last year</a>.</p>
+<p>Nevertheless, attendees took the opportunity to meet up with people they haven't seen in a while, or perhaps have
+only met online until then. The custom professionally designed badges that everyone was invited to wear 
+were a great conversation starter, since they also feature GitHub handles. In some cases, even the band T-shirt
+that some people happened to wear triggered people to talk to each other. <img alt="😉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f609.svg" title=":wink:" /></p>
+<figure style="display:flex; gap:0; justify-content:center;">
+<img alt="" src="../../eum26_registration.webp" width="50%" />
+<img alt="" src="../../eum26_badge.webp" width="50%" />
+</figure>
+<h3 id="visit-of-deucalion">Visit of Deucalion</h3>
+<p>Bernardo from the Deucalion team kickstarted the visit by explaining a couple of things outside first.</p>
+<figure>
+<img alt="" src="../../eum26_deucalion-visit-outside.webp" width="100%" />
+</figure>
+<p>In small self-organised groups, we walked through the noisy and (surprisingly) chilly room in which Deucalion
+was humming away running scientific calculations for researchers from Portugal and all across Europe.</p>
+<figure>
+<img alt="" src="../../eum26_deucalion-visit-group-pic-1.webp" width="100%" />
+</figure>
+<figure>
+<img alt="" src="../../eum26_deucalion-visit-group-pic-2.webp" width="100%" />
+</figure>
+<p>We got to see the relatively new artwork and custom logo of Deucalion up close,
+and many agreed that this was really well done.</p>
+<figure>
+<img alt="" src="../../eum26_deucalion-visit-cable-porn.webp" width="60%" />
+</figure>
+<p>A peek behind the watercooled doors at the back of each rack revealed that the cable work
+is impressively clean and organised.</p>
+<figure>
+<img alt="" src="../../eum26_deucalion-visit-group-pic-3.webp" width="100%" />
+</figure>
+<figure>
+<img alt="" src="../../eum26_deucalion-visit-fujitsu-rack.webp" width="100%" />
+</figure>
+<p>Deucalion consists of essentially three partitions:</p>
+<ul>
+<li>a 500-node CPU-only partition with AMD Rome CPUs;</li>
+<li>a 1,632-node partition with Fujitsu A64FX (Arm) CPUs;</li>
+<li>and a GPU partition 132 NVIDIA A100 GPUs;</li>
+</ul>
+<p>For more technical details on Deucalion, <a href="https://docs.deucalion.macc.fccn.pt/deucalion/">see the documentation</a>.</p>
+<figure>
+<img alt="" src="../../eum26_deucalion-visit-group-pic-4.webp" width="100%" />
+</figure>
+<figure>
+<img alt="" src="../../eum26_deucalion-visit-group-pic-5.webp" width="100%" />
+</figure>
+<p>Bart and Leonardo got so caught up in discussions while waiting for their turn outside in the sun
+that they almost missed the tour! <br/>
+Miguel from the Deucalion team still granted them a quick look at the system
+before re-joining the rest of the group.</p>
+<figure>
+<img alt="" src="../../eum26_deucalion-visit-chillers.webp" width="100%" />
+</figure>
+<p>The tour was wrapped up with a look at the chillers right next to the build housing Deucalion,
+which is another critical part of the infrastructure.</p>
+<p>After a quick refreshing drink or a cup of coffee or tea, we walked to the start of the guided city tour.</p>
+<p>Along the way, we could see the new datacenter being constructed on the University of Minho campus.</p>
+<figure>
+<img alt="" src="../../eum26_deucalion-visit-new-datacenter.webp" width="60%" />
+</figure>
+<h3 id="guimaraes-city-tour">Guimarães city tour</h3>
+<p>We started the tour at Castelo de Guimarães (Guimarães Castle), a UNESCO World Heritage site,
+with a brief word by our guide for the next hour on the long and tumultuous history of Portugal.</p>
+<p>Some of the younger attendees quickly checked their TikTok feed to see if there were any new dances
+to learn along the way. Kids these days...</p>
+<figure>
+<img alt="" src="../../eum26_city-tour-start.webp" width="100%" />
+</figure>
+<p>We took advantage of the scenery to take a group picture of everyone who was present from the start of the event.</p>
+<figure>
+<img alt="" src="../../eum26_group_picture.webp" width="100%" />
+</figure>
+<p>As somebody mentioned in the EasyBuild Slack when this group picture was shared with the broader community:
+it doesn't look like this castle was an ... easy build (<em>ba-dum tsing!</em>).</p>
+<p>During the tour, we passed by various interesting landmarks, like a statue of first king of Portugal.</p>
+<figure>
+<img alt="" src="../../eum26_city-tour-statue.webp" width="60%" />
+</figure>
+<p>Part of the old city wall made it crystal clear what Guimarães means to the Portuguese people:<br/>
+<em>Aqui nasceu Portugal</em> in Portuguese means <em>Portugal was born here</em>.</p>
+<figure>
+<img alt="" src="../../eum26_city-tour-wall.webp" width="75%" />
+</figure>
+<p>Eventually, the city tour brought us exactly where we had to be: the <a href="https://unu.edu/egov/about/location">United Nations University (UNU) EGOV</a>
+site located in Guimarães, the main venue for this EasyBuild User Meeting.</p>
+<h2 id="welcome-at-the-venue">Welcome at the venue</h2>
+<p>After a quick welcome, and fighting the local setup to ensure that we could also stream and record all talks,
+we were ready to start the actual meeting. The room was fully occupied by the almost 50 in-person attendees,
+to the point where extra chairs had to be brought in.</p>
+<figure>
+<img alt="" src="../../eum26_room.webp" width="100%" />
+</figure>
+<h2 id="easybuild-state-of-the-union">EasyBuild State of the Union</h2>
+<p>First up was the traditional <em>EasyBuild State of the Union</em> talk.
+Interesting trends and results from the <a href="https://docs.easybuild.io/user-survey/">9th EasyBuild User Survey</a>
+were presented, recent developments were briefly highlighted (as a teaser for what was to come in later talks),
+and a status update was shown on contributors and contributions to EasyBuild.</p>
+<figure style="display:flex; gap:0; justify-content:center;">
+<img alt="" src="../../eum26_state-of-the-union-screenshot1.webp" width="50%" />
+<img alt="" src="../../eum26_state-of-the-union-screenshot2.webp" width="50%" />
+</figure>
+<p>In addition, the discussion was initiated around current challenges including yet another increase in number of
+opened pull requests in the past year, and the threats &amp; opportunities of AI tools like LLMs,
+as well as the future of EasyBuild.</p>
+<p><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_001_state_of_the_union.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=2kywNPUnj_s&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=1&amp;pp=iAQB">recording</a>)</em></p>
+<h2 id="easybuild-governance">EasyBuild Governance</h2>
+<p>Right after the <em>State of the Union</em> talk, Adam updated attendees
+on the recent efforts of the <a href="https://docs.easybuild.io/governance/">interim Steering Committee</a> for EasyBuild.</p>
+<figure style="display:flex; gap:0; justify-content:center;">
+<img alt="" src="../../eum26_governance-screenshot1.webp" width="50%" />
+<img alt="" src="../../eum26_governance-screenshot2.webp" width="50%" />
+</figure>
+<p>After quickly covering the history of how EasyBuild came to be, he motivated the need for a steering committee,
+highlighted the brand new <a href="https://docs.easybuild.io/policies/ai/">EasyBuild AI Policy</a>, and outlined the path
+forward towards proper governance for EasyBuild.</p>
+<p>He kindly invited the EasyBuild community to provide feedback on the <a href="">draft governance documents</a>.</p>
+<p><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_002_governance.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=rXuwGFUZqFk&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=2&amp;pp=iAQB0gcJCdQKAYcqIYzv">recording</a>)</em></p>
+<h2 id="hpsf">HPSF</h2>
+<p>Directly tying in with the discussion on governance, the next talk introduced the
+<a href="https://hpsf.io"><em>High Performance Software Foundation (HPSF)</em></a>.</p>
+<p>Massimiliano explained what HPSF is all about, how HPC providers or sites can become a member,
+why projects should consider joining HPSF, and what the process entails.</p>
+<figure style="display:flex; gap:0; justify-content:center;">
+<img alt="" src="../../eum26_hpsf-screenshot1.webp" width="50%" />
+<img alt="" src="../../eum26_hpsf-screenshot2.webp" width="50%" />
+</figure>
+<p>Both EasyBuild and EESSI have expressed interest in joining HPSF, so this presentation was particularly
+interesting to attendees.</p>
+<p><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_003_HPSF.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=2BeWQquZbR8&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=4&amp;pp=iAQB">recording</a>)</em></p>
+<h2 id="easybuild-site-talks-part-1">EasyBuild site talks, part 1</h2>
+<p>To wrap up the first day, 3 (actually 4) people gave a short EasyBuild site talk, another tradition that has grown 
+at the EasyBuild User Meeting throughout the years.</p>
+<ul>
+<li>
+<p>Bernardo shared insights on how EasyBuild has helped with managing the central software stack on <em>Deucalion</em>,
+  the local EuroHPC supercomputer that features both a common AMD Rome (<code>x86_64</code>) and a less common Fujitsu A64FX (Arm) partition,
+  next to a partition with NVIDIA GPUs. This heterogeneous system architectures poses significant challenges,
+  w.r.t. managing a central stack of scientific software installations, which is largely overcome with the help from EasyBuild.
+  <br/><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_004_Deucalion.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=GdESGn9M81M&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=3&amp;pp=iAQB">recording</a>)</em></p>
+</li>
+<li>
+<p>Cintia and Jarne presented how EasyBuild is used on the Tier-2 supercomputers at the Vrije Universiteit Brussel (VUB),
+  as well as for the current and future Tier-1 supercomputers of the Flemish Supercomputer Centre (<a href="https://vscentrum.be">VSC</a>),
+  <a href="https://docs.vscentrum.be/gent/tier1_hortense.html"><em>Hortense</em></a> and <a href="https://docs.vscentrum.be/brussel/tier1_sofia.html"><em>sofia</em></a>.
+  <br/><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_005_VUB.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=GdESGn9M81M&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;t=1517s">recording</a>)</em></p>
+</li>
+<li>
+<p>Valentin from CERN gave a (self-proclaimed) "weird" EasyBuild site talk, since CERN does not actually use EasyBuild (yet <img alt="😉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f609.svg" title=":winking_face:" />).
+  He explained why that is the case, what is being used instead by the <a href="https://lhcb.web.cern.ch/">LCHb experiments</a>,
+  and ended with some thought provoking ideas on a standard for package recipes that could be adopted by tools like EasyBuild, Spack, and others.
+  <br/><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_006_CERN.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=GdESGn9M81M&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;t=2788s">recording</a>)</em></p>
+</li>
+</ul>
+<hr />
+<p>This blog post covered the first day of this 3-day event, see also <a href="../../22/eum26-day2/">day 2</a> and <a href="../../23/eum26/">day 3</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../../asciinema/asciinema-player-3.10.0.min.js"></script>
+      
+    
+  </body>
+</html>
