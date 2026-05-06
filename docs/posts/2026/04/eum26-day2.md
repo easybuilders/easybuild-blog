@@ -34,7 +34,7 @@ on how they have been using EasyBuild.
 - Next up, Pavel presented an overview of the contributions that [Inuits](https://inuits.eu/), an open source software consultancy company and one of the
   [sponsors of EUM'26](https://easybuild.io/eum26/), has made to EasyBuild in the last couple of years.<br/>
   In total, they have opened over 840 pull requests in the [easyconfigs repository](https://github.com/easybuilders/easybuild-easyconfigs).
-  In terms of number of easyconfig files, *over 20%* of those were contributed in 2024 came from Inuits, while last year they had share of about 13% of all contributed easyconfig files.
+  In terms of number of easyconfig files, *over 20%* of those were contributed in 2024 came from Inuits, while last year they had a share of about 13% of all contributed easyconfig files.
   Inuits has been working closely with the [HPC team at Ghent University](https://www.ugent.be/hpc/en), where EasyBuild was created, on this since 2020.
   <br/>*([slides](https://users.ugent.be/~kehoste/eum26/eum26_008_INUITS.pdf) - [recording](https://youtu.be/Wm9V0hI2QfU?list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&t=1405))*
 - Ole concluded part 2 of the EasyBuild site talks with a presentation on how EasyBuild has enabled the two-person team that he's a part of at [TU Denmark](https://www.hpc.dtu.dk/)
@@ -117,9 +117,9 @@ Maybe they were confused about the EasyBuild terminology being used by the atten
 ## 3D desktop with EasyBuild
 
 Mikael presented the recent (and ongoing) efforts he and his colleagues have made to
-install all that is required to get 3D desktop environment working in Linux.
+install all that is required to get a 3D desktop environment working in Linux.
 
-He gave an whirlwind tour of the Linux graphics stack, including various concepts
+He gave a whirlwind tour of the Linux graphics stack, including various concepts
 that are likely alien to most of the attendees, like compositors, window managers, buffers, panels, etc.
 He also clarified what *server* and *client* mean exactly in this context.
 
@@ -156,7 +156,7 @@ and the associated `--bwrap-installpath` which specifies the path for the staged
 Sam concluded the talk by doing a remote hands-on demo of this experimental EasyBuild feature,
 live from Brussels. Check the recording of the talk to see it in action!
 
-The remote participation of Sam  made for a funny-looking situation during the Q&A,
+The remote participation of Sam made for a funny-looking situation during the Q&A,
 when Sam's camera went full screen once he stopped his screen share. :laughing:
 
 <figure markdown="span">
@@ -247,10 +247,10 @@ Slurm some day.
 
 Tom covered how flux has been in development since 2012, and how it grew to being the system resource manager for
 [El Capitan](https://asc.llnl.gov/exascale/el-capitan), the first exascale supercomputer in the US which is
-[#1](https://top500.org/system/180307/) in the Top 500 list of supercomputers to date since November 2024.
+[#1](https://top500.org/system/180307/) in the TOP500 list of supercomputers to date since November 2024.
 
 He also showed how flexibility is one of the core design goals in flux, which is reflected in the hierarchical and
-modular design, and the fact that is extensible, easy to customize, and scalable.
+modular design, and the fact that it is extensible, easy to customize, and scalable.
 
 <figure markdown="span">
 ![](eum26_flux-screenshot.webp){width=80%}
