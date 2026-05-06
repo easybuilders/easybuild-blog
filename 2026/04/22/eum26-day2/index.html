@@ -286,6 +286,124 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#easybuild-site-talks-part-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EasyBuild site talks, part 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#llms-opportunity-threat-or-both" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LLMs: opportunity, threat, or both?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Spack
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3d-desktop-with-easybuild" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3D desktop with EasyBuild
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bubble-wrapping-easybuild" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bubble Wrapping EasyBuild
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slinky-on-aks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slinky on AKS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#easybuild-site-talks-part-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EasyBuild site talks, part 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epicure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EPICURE
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lmod-update" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lmod update
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        flux
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -352,7 +470,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              1 min read
+                              8 min read
                             
                           </span>
                         </div>
@@ -377,8 +495,197 @@
 
 
 <h1 id="eum26-day-2">EUM'26 - Day 2</h1>
+<p>On the second day of the 11th EasyBuild User Meeting (EUM'26), we had a busy agenda
+consisting of more EasyBuild site talks, a discussion on the use of LLMs,
+presentations focusing on recent developments in EasyBuild, and looking over the fence to
+other projects: Spack, Slinky, EPICURE, Lmod, and flux.</p>
+<figure>
+<img alt="" src="../../eum26_day2_room.webp" width="80%" />
+</figure>
 <p>This blog post covers the second day of the 3-day event, see also <a href="../../21/eum26-day1/">day 1</a> and <a href="../../23/eum26/">day 3</a>.</p>
-<p><em>COMING SOON</em></p>
+<!-- more -->
+
+<h2 id="easybuild-site-talks-part-2">EasyBuild site talks, part 2</h2>
+<p>We started in the morning where we left off the day before: letting HPC sites (and friends) give a short presentation
+on how they have been using EasyBuild.</p>
+<ul>
+<li>Gavin opened with a talk on the past and future of <a href="https://www.baskerville.ac.uk/">Baskerville</a>, which was a Tier-2 system in the UK,
+  but is now evolving into a National Compute Resource. Through a <a href="https://apps.baskerville.ac.uk">dedicated website</a>,
+  anyone can browse the (long) list of software installed on Baskerville.
+  <br/><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_007_Baskerville.pdf">slides</a> - <a href="https://youtu.be/Wm9V0hI2QfU?list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;t=0">recording</a>)</em></li>
+<li>Next up, Pavel presented an overview of the contributions that <a href="https://inuits.eu/">Inuits</a>, an open source software consultancy company and one of the
+  <a href="https://easybuild.io/eum26/">sponsors of EUM'26</a>, has made to EasyBuild in the last couple of years.<br/>
+  In total, they have opened over 840 pull requests in the <a href="https://github.com/easybuilders/easybuild-easyconfigs">easyconfigs repository</a>.
+  In terms of number of easyconfig files, <em>over 20%</em> of those were contributed in 2024 came from Inuits, while last year they had a share of about 13% of all contributed easyconfig files.
+  Inuits has been working closely with the <a href="https://www.ugent.be/hpc/en">HPC team at Ghent University</a>, where EasyBuild was created, on this since 2020.
+  <br/><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_008_INUITS.pdf">slides</a> - <a href="https://youtu.be/Wm9V0hI2QfU?list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;t=1405">recording</a>)</em></li>
+<li>Ole concluded part 2 of the EasyBuild site talks with a presentation on how EasyBuild has enabled the two-person team that he's a part of at <a href="https://www.hpc.dtu.dk/">TU Denmark</a>
+  to manage a rich central software stack consisting of over 1,000 software installations for their <em>Niflheim</em> HPC infrastructure. He also mentioned his
+  <em>documentation, documentation, documentation</em> mantra, which has resulted in an extensive set of detailed documentation that is publicly
+  available at <a href="https://wiki.fysik.dtu.dk/">https://wiki.fysik.dtu.dk</a>. The alternative <a href="https://wiki.fysik.dtu.dk/Niflheim_system/Slurm_operations/"><em>Slurm operations</em> documentation</a>
+  they maintain is a particularly useful source of information for the broader HPC community.
+  <br/><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_009_TUDenmark.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=Wm9V0hI2QfU&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;t=2058s">recording</a>)</em></li>
+</ul>
+<figure>
+<img alt="" src="../../eum26_INUITS-site-talk.webp" width="80%" />
+</figure>
+<h2 id="llms-opportunity-threat-or-both">LLMs: opportunity, threat, or both?</h2>
+<p>One topic that was bound to be hard to avoid this year was <em>Large Language Models (LLMs)</em>.</p>
+<p>In this session, we first looked at results of the AI-related questions in the
+latest EasyBuild User Survey.</p>
+<p>Some key results from the survey:</p>
+<ul>
+<li>56% uses AI tools for non-EasyBuild tasks;</li>
+<li>25% uses it for EasyBuild-related tasks, mostly for easyconfigs;</li>
+<li>13% is not using AI tools yet, but would like to;</li>
+<li>22% isn't using it and is also not planning to;</li>
+</ul>
+<p>When asked about features in EasyBuild that involve integration with LLMs:</p>
+<ul>
+<li>30% states they are interested;</li>
+<li>44% would first like to see what that would entail;</li>
+<li>24% has a more negative stance and is not interested.</li>
+</ul>
+<p>Subsequently, a group discussion was kicked off by raising the question whether LLMs
+were an opportunity, a threat, or both at the same time.</p>
+<p>Several attendees expressed interest in exploring the potential of using LLMs with EasyBuild,
+to help with writing or changing easyconfig files, and identifying problems, debugging them,
+and finding solutions. Some EasyBuild maintainers also wondered whether LLMs could help with
+processing of incoming contributions.</p>
+<p>It was quite clear that the large diversity in views on this topic was an important aspect to take into account.
+This was captured well in the recently adopted <a href="https://docs.easybuild.io/policies/ai/">EasyBuild AI policy</a>,
+which promises the EasyBuild community that LLMs will not be forced on anyone, and asks contributors
+that they clearly declare the use of AI in their pull requests, along with some details on the extent in which it was
+used, and to always keep a human in the loop.</p>
+<p><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_010_LLMs.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=xOhJReT8mU8&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=6&amp;pp=iAQB">recording</a>)</em></p>
+<h2 id="spack">Spack</h2>
+<p>While we always had a <em>Spack update</em> talk at the EasyBuild User Meeting, this year we had a first:
+we had not just one, but <em>two</em> Spack developers joining the event in person.</p>
+<p>Harmen started with a lightning-fast introduction to Spack and its core concepts like specs,
+parametrized package recipes, concretization, and hashes. He continued with an in-depth overview
+of recent developments in Spack, including what has changed in Spack 1.0, which was released summer 2025.</p>
+<p>He also showcased the new installer UI, and support for using a POSIX jobserver which results
+in composable parallelism.</p>
+<figure>
+<img alt="" src="../../eum26_spack_basic-install.gif" width="80%" />
+</figure>
+<p>Massimiliano then covered additional topics, including support for using a group of specs in
+environments, creating OCI container images from the Spack build cache, changes to how Spack
+can be configured, and various performance improvements. Most of this will be included
+in the upcoming Spack 1.2 release (ETA June 2026).</p>
+<p>During Q&amp;A, several interesting questions were raised to them, which led to some puzzled faces for both speakers.
+Maybe they were confused about the EasyBuild terminology being used by the attendees? <img alt="🙈" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f648.svg" title=":see_no_evil:" /></p>
+<figure>
+<img alt="" src="../../eum26_Max-Harmen-Spack.webp" width="50%" />
+</figure>
+<p><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_011_Spack.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=ta8ZXl0F6iA&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=7&amp;pp=iAQB">recording</a>)</em></p>
+<h2 id="3d-desktop-with-easybuild">3D desktop with EasyBuild</h2>
+<p>Mikael presented the recent (and ongoing) efforts he and his colleagues have made to
+install all that is required to get a 3D desktop environment working in Linux.</p>
+<p>He gave a whirlwind tour of the Linux graphics stack, including various concepts
+that are likely alien to most of the attendees, like compositors, window managers, buffers, panels, etc.
+He also clarified what <em>server</em> and <em>client</em> mean exactly in this context.</p>
+<p>By comparing the old school X11 with the more modern Wayland, he gradually built up
+a detailed overview of this complex ecosystem, and covered various gotchas along the way.</p>
+<p>He wrapped up the presentation with an impressive demo of a 3D desktop environment that was
+installed entirely with EasyBuild. Go check out the recording to see it in action!</p>
+<figure>
+<img alt="" src="../../eum26_3d-desktop-screenshot.webp" width="80%" />
+</figure>
+<p><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_012_3d-desktop.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=oLa3QHUkw9o&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=8&amp;pp=iAQB">recording</a>)</em></p>
+<h2 id="bubble-wrapping-easybuild">Bubble Wrapping EasyBuild</h2>
+<p>After a nice lunch break which provided another excellent opportunity for attendees
+to network, Bart continued the program with a talk on the integration of <a href="https://github.com/containers/bubblewrap"><em>bubblewrap</em>,
+a.k.a. <code>bwrap</code></a> in EasyBuild,
+with the help of Sam who was joining remotely as a co-speaker.</p>
+<p>Bart explained how <code>bwrap</code> can be used to support <em>staged installations</em>,
+which can later be moved into the final installation prefix semi-atomically.
+This way, you can replace existing installations on a production system with minimal interruption.</p>
+<figure>
+<img alt="" src="../../eum26_bwrap-screenshot.webp" width="60%" />
+</figure>
+<p>Experimental support for this has been added to EasyBuild 5.3.0, via the <code>--bwrap</code> configuration option
+and the associated <code>--bwrap-installpath</code> which specifies the path for the staged installations.</p>
+<p>Sam concluded the talk by doing a remote hands-on demo of this experimental EasyBuild feature,
+live from Brussels. Check the recording of the talk to see it in action!</p>
+<p>The remote participation of Sam made for a funny-looking situation during the Q&amp;A,
+when Sam's camera went full screen once he stopped his screen share. <img alt="😆" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f606.svg" title=":laughing:" /></p>
+<figure>
+<img alt="" src="../../eum26_big-sam-is-watching.webp" width="50%" />
+</figure>
+<p><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_013_bwrap.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=198dOxA3Zlo&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=9&amp;pp=iAQB">recording</a>)</em></p>
+<h2 id="slinky-on-aks">Slinky on AKS</h2>
+<p>Next up, Kris from INUITS presented his adventures with using <a href="https://slurm.schedmd.com/slinky.html">Slinky</a>, a set of tools
+to integrate Slurm with Kubernetes, on <a href="https://learn.microsoft.com/en-us/azure/aks/what-is-aks">Azure Kubernetes Service (AKS)</a>, an effort that was done in collaboration with Microsoft.</p>
+<p>After a quick high-level introduction by Hugo from Microsoft, Kris gave a detailed overview of his work
+using Slinky to get Slurm working on AKS, and making sure that both Infiniband interconnect and NVIDIA GPUs were fully functional.
+For this, he relied on <a href="https://www.eessi.io/">EESSI</a> to run <a href="https://www.gromacs.org/">GROMACS</a> as a test case.</p>
+<figure>
+<img alt="" src="../../eum26_slinky-talk.webp" width="80%" />
+</figure>
+<p>Documentation, code, and examples are available via a dedicated <a href="https://github.com/krisbuytaert/slinky-aks-demo">GitHub repository <code>slinky-aks-demo</code></a>.</p>
+<p><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_014_Slinky.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=moiFuEwxBXY&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=10&amp;pp=iAQB">recording</a>)</em></p>
+<h2 id="easybuild-site-talks-part-3">EasyBuild site talks, part 3</h2>
+<p>Following several longer talks, it was time for another series of shorter EasyBuild site talks:</p>
+<ul>
+<li>Alexander, a.k.a. the infamous <a href="https://github.com/Flamefire"><code>@Flamefire</code></a> on GitHub,
+  presented the plans of the HPC team at <a href="https://tu-dresden.de/zih?set_language=en">TU Dresden</a>
+  to start using <a href="https://eessi.io">EESSI</a> as a base for their central software stack, and the related challenges
+  and questions that have emerged.
+  <br/><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_015_TUDresden.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=iQ9924lIZJY&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=11&amp;pp=iAQB&amp;t=0">recording</a>)</em></li>
+<li>Xavier outlined how <a href="https://www.luxprovide.lu/">LuxProvide</a> is using EasyBuild to manage the
+  <a href="https://docs.lxp.lu/system/overview/">MeluXina</a> User Software Environment
+  (<a href="https://docs.lxp.lu/first-steps/software_env/#the-meluxina-user-software-environment-muse">MUSE</a>).
+  He also briefly covered the improvements he implemented to the Slurm job backend of EasyBuild,
+  for which a <a href="https://github.com/easybuilders/easybuild-framework/pull/5177">pull request</a> was opened,
+  and teased the ongoing exploratory work on creating an AI coding assistant for EasyBuild.
+  <br/><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_016_LuxProvide.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=iQ9924lIZJY&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=11&amp;pp=iAQB&amp;t=1449">recording</a>)</em></li>
+<li>Thomas wrapped up this session with a presentation on the work that <a href="https://gluo.be/">Gluo</a> has been doing
+  for <a href="https://www.basf.com/">BASF</a> with EasyBuild over the last couple of years. He explained how they have
+  transitioned from manual software installations in 2017 to installing modules using EasyBuild, using a <a href="https://github.com/easybuilders/easybuild-framework/pull/3547">custom
+  module naming scheme named <code>GenerationModuleNamingScheme</code></a>, 
+  and more recently also adopting <a href="https://cernvm.cern.ch/fs/">CernVM-FS</a> to distribute software installations across Europe,
+  the US, and AWS.
+  <br/><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_017_Gluo-BASF.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=iQ9924lIZJY&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=11&amp;pp=iAQB&amp;t=3018">recording</a>)</em></li>
+</ul>
+<h2 id="epicure">EPICURE</h2>
+<p>Bibek introduced attendees to <a href="https://epicure-hpc.eu/">EPICURE</a>, which provides support services for EuroHPC projects.</p>
+<figure>
+<img alt="" src="../../eum26_EPICURE-screenshot.webp" width="75%" />
+</figure>
+<p>He showed how EasyBuild is used by EPICURE, and gave a couple of recent examples, including the
+<a href="https://opencode.it4i.eu/epicure/epicure-benchmark">EPICURE Benchmark Suite</a>.</p>
+<p><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_018_EPICURE.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=DDfbSOTI9Jk&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=12&amp;pp=iAQB">recording</a>)</em></p>
+<h2 id="lmod-update">Lmod update</h2>
+<p>We invited Robert McLay to give a remote <em>Lmod update</em> talk again.
+A bit to our surprise, he refused, because he preferred to fly across the pond instead to give the talk in person!</p>
+<p>Robert, now retired from <a href="https://tacc.utexas.edu/">TACC</a>, has presented an update on <a href="https://github.com/TACC/Lmod/">Lmod</a> 
+several times at the EasyBuild User Meeting, and as he mentioned he <em>still</em> isn't done talking about it...</p>
+<figure>
+<img alt="" src="../../eum26_lmod-talk.webp" width="80%" />
+</figure>
+<p>He presented an overview of the recent developments in Lmod, including significant performance improvements,
+which led to the release of Lmod 9.0. In addition, he discussed how using AI tooling has helped tremendously
+to <a href="https://lmod.readthedocs.io/en/latest/#overview-and-internal-structure-of-lmod">document the internals of Lmod</a>,
+and how it helped to find the root cause <em>and</em> a fix for a <a href="https://github.com/TACC/Lmod/issues/805">recent bug</a>.
+The latest Lmod 9.2 release also includes support for running on top of Lua 5.5, which was released late 2025.</p>
+<p><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_019_Lmod.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=1QkOYpMYU5I&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=13&amp;pp=iAQB">recording</a>)</em></p>
+<h2 id="flux">flux</h2>
+<p>Last but not least was a remote presentation by Tom Scogland (LLNL) on <a href="https://flux-framework.org/">flux</a>,
+a next-generation resource management framework, which is a strong contender for replacing the ubiquitous
+Slurm some day.</p>
+<p>Tom covered how flux has been in development since 2012, and how it grew to being the system resource manager for
+<a href="https://asc.llnl.gov/exascale/el-capitan">El Capitan</a>, the first exascale supercomputer in the US which is
+<a href="https://top500.org/system/180307/">#1</a> in the TOP500 list of supercomputers to date since November 2024.</p>
+<p>He also showed how flexibility is one of the core design goals in flux, which is reflected in the hierarchical and
+modular design, and the fact that it is extensible, easy to customize, and scalable.</p>
+<figure>
+<img alt="" src="../../eum26_flux-screenshot.webp" width="80%" />
+</figure>
+<p>This talk proved to be an excellent addition to the program, despite flux having no direct connection with EasyBuild (yet).</p>
+<p><em>(<a href="https://users.ugent.be/~kehoste/eum26/eum26_020_flux.pdf">slides</a> - <a href="https://www.youtube.com/watch?v=xGywlSPoD3c&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=14&amp;pp=iAQB">recording</a>)</em></p>
+<hr />
+<p>This blog post covered the second day of this 3-day event, see also <a href="../../21/eum26-day1/">day 1</a> and <a href="../../23/eum26/">day 3</a>.</p>
 
 
 
