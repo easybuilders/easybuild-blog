@@ -26,22 +26,22 @@ flipping a flag in `tar`.
 
 EasyBuild supports fetching sources from various origins, and Git repositories
 are often used when official source tarballs are unavailable or when working
-with development unreleased code. In these cases, EasyBuild will create a
+with unreleased development code. In these cases, EasyBuild will create a
 source archive by checking out a specific Git commit or tag and generating a
 compressed `.tar` file from it.
 
 The fetch operation from the Git repository is reliable and Git will verify the
 integrity of all downloaded files. However, Git cannot guarantee that you are
-getting the exact same code base by executing the same clone command in two
-different moments in time. For instance, the developers can change the commit
-referenced by a _tag_ (which is not so uncommon!). In such a case, cloning the
+getting the exact same code base by executing the same clone command two
+different times. For instance, the developers can change the commit referenced
+by a _tag_ (which is not so uncommon!). In such a case, cloning the
 same tag will lead to a different code base.
 
 EasyBuild avoids this pitfall by fetching the sources from the target Git
-repository once, then generate a tarball with its SHA256 checksum. Hence, by
-sharing this checksum among the EasyBuild community, we can be sure that every
-installation of the target software and version will use the same exact code
-base and guarantee it's reproducibility.
+repository once, and then generate a tarball with its SHA256 checksum. Hence,
+by sharing this checksum among the EasyBuild community, we can be sure that
+every installation of the target software and version will use the same exact
+code base and guarantee its reproducibility.
 
 But here's the catch: without careful handling, **the resulting tarball isn't
 guaranteed to be identical** every time you build it, even if the Git commit
