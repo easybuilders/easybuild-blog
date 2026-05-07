@@ -10,7 +10,7 @@ hide:
 # EUM'26 - Day 3
 
 On day 3 of the 11th EasyBuild User Meeting (EUM'26), we shifted our focus a bit towards
-[EESSI](https://eessi.io), and also has a guest keynote speaker from Fujitsu. Attendees
+[EESSI](https://eessi.io), and also featured a guest keynote speaker from Fujitsu. Attendees
 actively engaged in discussions, which made it more challenging to stick to the schedule.
 
 <figure markdown="span">
@@ -54,7 +54,7 @@ a follow-up to the [A64FX](https://en.wikipedia.org/wiki/Fujitsu_A64FX) CPUs fro
 
 He explained how the current agentic AI trend is impossible to ignore, and how that makes it challenging to catch up with other high-end processor designs.
 
-The MONAKA microarchitecture will feature support for Arm SVE2 instructions, and uses a 3D chiplet design with a 2nm core die combined a SRAM and IO die using a 5nm process.
+The MONAKA microarchitecture will feature support for Arm SVE2 instructions, and uses a 3D chiplet design with a 2nm core die combining an SRAM and IO die using a 5nm process.
 The roadmap for MONAKA already goes beyond 2027, with MONAKA-X (2029) which will be used in "Fugaku NEXT", the follow-up system to [Fugaku](https://www.r-ccs.riken.jp/en/fugaku/).
 
 *(slides coming soon - [recording](https://www.youtube.com/watch?v=QyF3Em6w7XM&list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&index=16&pp=iAQB0gcJCdwKAYcqIYzv))*
@@ -73,7 +73,7 @@ and which [generations of NVIDIA GPUs](https://www.eessi.io/docs/software_layer/
 </figure>
 
 In addition, he gave an update on the ongoing work on adding support for AMD GPUs, by making the ROCm ecosystem available in EESSI.
-While some challenges still remain, significant process has been made on that, including support for installing ROCm components and using a ROCm-based compiler toolchain
+While some challenges still remain, significant progress has been made on that, including support for installing ROCm components and using a ROCm-based compiler toolchain
 in EasyBuild v5.3.0.
 
 *([slides](https://users.ugent.be/~kehoste/eum26/eum26_023_EESSI-GPU-support.pdf) - [recording](https://www.youtube.com/watch?v=ACHX17b7KmE&list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&index=17&pp=iAQB))*
@@ -83,7 +83,7 @@ in EasyBuild v5.3.0.
 As a quick intermezzo, I taunted the demo gods by doing a live hands-on demonstration of (a development version)
 of the [command line tool for EESSI](https://github.com/EESSI/eessi-cli).
 
-The main attraction is this tool is currently `eessi check`, which helps to validate your CernVM-FS client configuration
+The main attraction of this tool is currently `eessi check`, which helps to validate your CernVM-FS client configuration
 to access the EESSI repositories. The tool also includes a dummy implementation of `eessi init`, and initial support for `eessi shell`
 which allows to quickly start a subshell in which the EESSI environment is already initialized.
 
@@ -118,7 +118,7 @@ on a Linux system so EESSI can be accessed on it, but that currently still sits 
 
 ## JUBE
 
-Thomas introduces attendees to [JUBE](https://github.com/FZJ-JSC/JUBE), the benchmarking environment that is used in [`jubench`](https://github.com/FZJ-JSC/jubench),
+Thomas introduced attendees to [JUBE](https://github.com/FZJ-JSC/JUBE), the benchmarking environment that is used in [`jubench`](https://github.com/FZJ-JSC/jubench),
 the benchmark suite for [JUPITER](https://www.fz-juelich.de/en/jsc/jupiter), the first exascale supercomputer in Europe.
 
 <figure markdown="span" style="display:flex; gap:0; justify-content:center;">
@@ -126,7 +126,7 @@ the benchmark suite for [JUPITER](https://www.fz-juelich.de/en/jsc/jupiter), the
 </figure>
 
 He explained how JUBE can be used with or without EasyBuild and EESSI, how to use the `jube` command line interface,
-define tests in eiter XML or YAML, and covered several use cases.
+define tests in either XML or YAML, and covered several use cases.
 
 *([slides](https://users.ugent.be/~kehoste/eum26/eum26_025_JUBE.pdf) - [recording](https://www.youtube.com/watch?v=u8cqCQTRysk&list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&index=19&pp=iAQB))*
 
@@ -194,7 +194,7 @@ Last (almost, anyway) but not least, Alan gave an in-depth talk on the [EuroHPC 
 </figure>
 
 He focused on the integration of EESSI in EFP as the *Federated Software Catalog* for EuroHPC systems.
-In addition, he gave live hands-on demonstration to show how EFP will make accessing and using
+In addition, he gave a live hands-on demonstration to show how EFP will make accessing and using
 EuroHPC systems easier.
 
 This triggered a variety of questions, suggestions, and remarks, which resulted
@@ -207,7 +207,7 @@ the very end was a wise man...
 
 We wrapped up the meeting with a brief outlook to the future of EasyBuild, including
 the plans for a new major version of EasyBuild (v6.0.0), which is scheduled to be released
-spring 2027.
+in Spring 2027.
 
 *([slides](https://users.ugent.be/~kehoste/eum26/eum26_032_EasyBuild-future.pdf) - [recording](https://www.youtube.com/watch?v=EIq-zQWDL3Y&list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&index=24&pp=iAQB0gcJCdwKAYcqIYzv))*
 
