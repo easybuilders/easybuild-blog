@@ -35,14 +35,14 @@ This blog post covers the first day of the 3-day event, see also [day 2](eum26-d
 
 The 11th EasyBuild User Meeting (EUM) started off a bit atypically: with a tour of the local EuroHPC supercomputer
 named [*Deucalion*](https://www.macc.fccn.pt/resources#deucalion), followed by a guided tour of Guimarães,
-the host city for the event and also the birth place of Portugal.
+the host city for the event and also the birthplace of Portugal.
 
 Social activities have been part of the EUM program before, especially if you consider the group dinners,
 and the "team building"-like side steps we have done in recent years. See for example the karting race that was
 organised to celebrate the [10th EasyBuild User Meeting last year](../../2025/03/eum25.md).
 
 Nevertheless, attendees took the opportunity to meet up with people they haven't seen in a while, or perhaps have
-only met online until then. The custom professsionally designed badges that everyone was invited to wear 
+only met online until then. The custom professionally designed badges that everyone was invited to wear 
 were a great conversation starter, since they also feature GitHub handles. In some cases, even the band T-shirt
 that some people happened to wear triggered people to talk to each other. :wink:
 
@@ -71,7 +71,7 @@ was humming away running scientific calculations for researchers from Portugal a
 </figure>
 
 We got to see the relatively new artwork and custom logo of Deucalion up close,
-and many agreed that is was really well done.
+and many agreed that this was really well done.
 
 <figure markdown="span">
 ![](eum26_deucalion-visit-cable-porn.webp){width=60%}
@@ -230,7 +230,7 @@ interesting to attendees.
 ## EasyBuild site talks, part 1
 
 To wrap up the first day, 3 (actually 4) people gave a short EasyBuild site talk, another tradition that has grown 
-a the EasyBuild User Meeting throughout the years.
+at the EasyBuild User Meeting throughout the years.
 
 - Bernardo shared insights on how EasyBuild has helped with managing the central software stack on *Deucalion*,
   the local EuroHPC supercomputer that features both a common AMD Rome (`x86_64`) and a less common Fujitsu A64FX (Arm) partition,
