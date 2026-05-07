@@ -218,6 +218,3 @@ What about next year, will there be an EasyBuild User Meeting again? *Of course 
 Exact dates and location are yet to be decided, stay tuned for more information
 some time after summer 2026...
 
----
-
-This blog post covered the third day of this 3-day event, see also [day 1](eum26-day1.md) and [day 2](eum26-day2.md).
