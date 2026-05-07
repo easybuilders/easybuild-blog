@@ -2,7 +2,7 @@
 authors:
   - boegel
 date: 2026-04-23
-slug: eum26
+slug: eum26-day3
 hide:
   - navigation
 ---
