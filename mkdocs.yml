@@ -1,4 +1,6 @@
 site_name: EasyBuild blog
+site_description: "Blog for EasyBuild (https://easybuild.io)"
+site_url: https://blog.easybuild.io
 theme:
   name: material
   logo: img/logos/EasyBuild.png
@@ -28,3 +30,10 @@ plugins:
       module_name: macros
       on_error_fail: true
       on_undefined: strict
+  - rss:
+      match_path: posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags

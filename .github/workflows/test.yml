@@ -20,7 +20,7 @@ jobs:
       with:
         check_filenames: true
         skip: '*.pdf,.git,*.json,*.js,*.css'
-        ignore_words_list: 
+        ignore_words_list: AKS,aks,BASF,basf
 
     - name: install mkdocs + plugins
       run: |
