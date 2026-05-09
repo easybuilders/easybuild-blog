@@ -1,3 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://blog.easybuild.io/</loc>
+         <lastmod>2026-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://blog.easybuild.io/asciinema/</loc>
+         <lastmod>2026-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://blog.easybuild.io/2025/03/28/eum25/</loc>
+         <lastmod>2026-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://blog.easybuild.io/2025/05/27/easybuild-5.1.0/</loc>
+         <lastmod>2026-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://blog.easybuild.io/2025/08/13/interactive-shell/</loc>
+         <lastmod>2026-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://blog.easybuild.io/2026/04/21/eum26-day1/</loc>
+         <lastmod>2026-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://blog.easybuild.io/2026/04/22/eum26-day2/</loc>
+         <lastmod>2026-05-09</lastmod>
+    </url>
+    <url>
+         <loc>https://blog.easybuild.io/2026/04/23/eum26-day3/</loc>
+         <lastmod>2026-05-09</lastmod>
+    </url>
 </urlset>
