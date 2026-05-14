@@ -16,6 +16,8 @@
         <link rel="prev" href="../../22/eum26-day2/">
       
       
+        <link rel="next" href="../../26/jobs/">
+      
       
         
       
@@ -566,28 +568,28 @@ of the <a href="https://github.com/EESSI/eessi-cli">command line tool for EESSI<
 <p>The main attraction of this tool is currently <code>eessi check</code>, which helps to validate your CernVM-FS client configuration
 to access the EESSI repositories. The tool also includes a dummy implementation of <code>eessi init</code>, and initial support for <code>eessi shell</code>
 which allows to quickly start a subshell in which the EESSI environment is already initialized.</p>
-<p>Example output produced by <code>eessi check</code>:</p>
-<pre><code>📦 Checking for EESSI repositories...
-    ✅ OK /cvmfs/dev.eessi.io is available
-    ✅ OK /cvmfs/riscv.eessi.io is available
-    ✅ OK /cvmfs/software.eessi.io is available
-
-🔎 Inspecting EESSI repository software.eessi.io...
-    💻 Client cache:
-        ℹ Path to client cache directory: /var/lib/cvmfs/shared
-        ℹ Shared cache: yes
-        ℹ Client cache quota limit: 9.765625 GiB
-        ℹ Cache Usage:  282k / 10240001k
-    🌍 Server/proxy settings:
-        ℹ List of Stratum-1 mirror servers:
-            http://aws-eu-central-s1.eessi.science/cvmfs/software.eessi.io
-            http://azure-us-east-s1.eessi.science/cvmfs/software.eessi.io
-            http://cvmfs-ext.gridpp.rl.ac.uk:8000/cvmfs/software.eessi.io
-        ⚡ WARNING Proxy servers: DIRECT (not recommended, see https://eessi.io/docs/no-proxy)
-        ℹ GeoAPI enabled: yes
-    💁 Other:
-        ℹ Client profile:
-</code></pre>
+<p>Example output produced by <code>eessi check</code>:
+<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>📦 Checking for EESSI repositories...
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    ✅ OK /cvmfs/dev.eessi.io is available
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    ✅ OK /cvmfs/riscv.eessi.io is available
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    ✅ OK /cvmfs/software.eessi.io is available
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>🔎 Inspecting EESSI repository software.eessi.io...
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    💻 Client cache:
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        ℹ Path to client cache directory: /var/lib/cvmfs/shared
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        ℹ Shared cache: yes
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        ℹ Client cache quota limit: 9.765625 GiB
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        ℹ Cache Usage:  282k / 10240001k
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    🌍 Server/proxy settings:
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        ℹ List of Stratum-1 mirror servers:
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>            http://aws-eu-central-s1.eessi.science/cvmfs/software.eessi.io
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>            http://azure-us-east-s1.eessi.science/cvmfs/software.eessi.io
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>            http://cvmfs-ext.gridpp.rl.ac.uk:8000/cvmfs/software.eessi.io
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>        ⚡ WARNING Proxy servers: DIRECT (not recommended, see https://eessi.io/docs/no-proxy)
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>        ℹ GeoAPI enabled: yes
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    💁 Other:
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>        ℹ Client profile:
+</span></code></pre></div></p>
 <p>Support for <code>eessi install</code> has been implemented, which allows to quickly install and configure CernVM-FS
 on a Linux system so EESSI can be accessed on it, but that currently still sits in an <a href="https://github.com/EESSI/eessi-cli/pull/16">open pull request</a>.</p>
 <p><em>(no slides, live demo of <a href="https://pypi.org/project/eessi/">eessi</a> CLI tool - <a href="https://www.youtube.com/watch?v=5VgHFBVh4_0&amp;list=PLhnGtSmEGEQjTW4HoDDNnjBGUf4v0RgJw&amp;index=18&amp;pp=iAQB">recording</a>)</em></p>

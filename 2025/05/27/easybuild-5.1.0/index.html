@@ -480,15 +480,15 @@
 and indicate whether each installation was a <em>success</em>, which ones <em>failed</em>, and which installations were <em>skipped</em>
 (for example because a required dependency failed to install).</p>
 <p>For example:</p>
-<pre><code>$ eb matplotlib-3.9.2-gfbf-2024a.eb -r
-...
-== Build succeeded for 2 out of 4
-== Summary:
-   * [SUCCESS] Python/3.12.3-GCCcore-13.3.0
-   * [SUCCESS] SciPy-bundle/2024.05-gfbf-2024a
-   * [FAILED]  libpng/1.6.43-GCCcore-13.3.0
-   * [SKIPPED] matplotlib/3.9.2-gfbf-2024a
-</code></pre>
+<div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>$ eb matplotlib-3.9.2-gfbf-2024a.eb -r
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>...
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>== Build succeeded for 2 out of 4
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>== Summary:
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>   * [SUCCESS] Python/3.12.3-GCCcore-13.3.0
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>   * [SUCCESS] SciPy-bundle/2024.05-gfbf-2024a
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>   * [FAILED]  libpng/1.6.43-GCCcore-13.3.0
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>   * [SKIPPED] matplotlib/3.9.2-gfbf-2024a
+</span></code></pre></div>
 <p>With this summary you can more easily assess the overall result of the EasyBuild session, and quickly focus on the failing installations. </p>
 <hr />
 <h2 id="cuda-sanity-check">CUDA sanity check</h2>
@@ -514,19 +514,19 @@ They specify how strict EasyBuild should be when performing the CUDA sanity chec
 <p>For now, EasyBuild will by default only print and/or log warnings when the specified conditions are not met,
 unless the <code>cuda-sanity-check-error-on-failed-checks</code> configuration setting is enabled.</p>
 <p>For installations in which CUDA is used as a (direct) dependency,
-the trace output for the sanity check step will include a brief summary like:</p>
-<pre><code>  &gt;&gt; CUDA sanity check summary report:
-  &gt;&gt; Number of CUDA files checked: 7
-  &gt;&gt; Number of files missing one or more CUDA Compute Capabilities: 2
-  &gt;&gt; (not running with --cuda-sanity-check-error-on-failed-checks, so not considered failures)
-  &gt;&gt; Number of files with device code for more CUDA Compute Capabilities than requested: 3
-  &gt;&gt; (not running with --cuda-sanity-check-error-on-failed-checks, so not considered failures)
-  &gt;&gt; Number of files missing PTX code for the highest configured CUDA Compute Capability: 5
-  &gt;&gt; (not running with --cuda-sanity-check-error-on-failed-checks, so not considered failures)
-  &gt;&gt; You may consider rerunning with --cuda-sanity-check-accept-ptx-as-devcode to accept suitable PTX code instead of device code.
-  &gt;&gt; You may consider running with --cuda-sanity-check-accept-missing-ptx to accept binaries missing PTX code for the highest configured CUDA Compute Capability.
-  &gt;&gt; See build log for detailed lists of files not passing the CUDA Sanity Check
-</code></pre>
+the trace output for the sanity check step will include a brief summary like:
+<div class="highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>  &gt;&gt; CUDA sanity check summary report:
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  &gt;&gt; Number of CUDA files checked: 7
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  &gt;&gt; Number of files missing one or more CUDA Compute Capabilities: 2
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  &gt;&gt; (not running with --cuda-sanity-check-error-on-failed-checks, so not considered failures)
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  &gt;&gt; Number of files with device code for more CUDA Compute Capabilities than requested: 3
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  &gt;&gt; (not running with --cuda-sanity-check-error-on-failed-checks, so not considered failures)
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  &gt;&gt; Number of files missing PTX code for the highest configured CUDA Compute Capability: 5
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  &gt;&gt; (not running with --cuda-sanity-check-error-on-failed-checks, so not considered failures)
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  &gt;&gt; You may consider rerunning with --cuda-sanity-check-accept-ptx-as-devcode to accept suitable PTX code instead of device code.
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  &gt;&gt; You may consider running with --cuda-sanity-check-accept-missing-ptx to accept binaries missing PTX code for the highest configured CUDA Compute Capability.
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  &gt;&gt; See build log for detailed lists of files not passing the CUDA Sanity Check
+</span></code></pre></div></p>
 <p>For in-depth details on this, see the changes that were made in <a href="https://github.com/easybuilders/easybuild-framework/pull/4692/files"><code>easybuild-framework</code> PR #4692</a>.</p>
 <hr />
 <h2 id="data-installations">Data installations</h2>
@@ -541,9 +541,9 @@ the trace output for the sanity check step will include a brief summary like:</p
 file from <code>https://github.com</code>.</p>
 <p>This was done to mitigate the impact of <a href="https://github.blog/changelog/2025-05-08-updated-rate-limits-for-unauthenticated-requests/">changes made by GitHub to impose stricter rate
 limits</a>
-for the GitHub web interface, which can quickly lead to an HTTP error when downloading too frequently:</p>
-<pre><code>HTTP Error 429: Too Many Requests
-</code></pre>
+for the GitHub web interface, which can quickly lead to an HTTP error when downloading too frequently:
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>HTTP Error 429: Too Many Requests
+</span></code></pre></div></p>
 <p>For more details, see <a href="https://github.com/easybuilders/easybuild-framework/issues/4869">framework issue #4869</a> and <a href="https://github.com/easybuilders/easybuild-framework/pull/4878">framework PR #4878</a>.</p>
 <hr />
 <h2 id="cleaner-output-for-sanity-check">Cleaner output for sanity check</h2>
@@ -551,30 +551,30 @@ for the GitHub web interface, which can quickly lead to an HTTP error when downl
 by replacing the standard (noisy) trace output for commands executed during the sanity check with a one-line message.</p>
 <p>The output for the "import" tests that are run for every extension that is being installed is now a lot cleaner.
 It used to be multiple lines with way too much detail for each extension:</p>
-<pre><code>&gt;&gt; running shell command:
-      /software/Python/3.12.3-GCCcore-13.3.0/bin/python -c &quot;import matplotlib&quot;
-      [started at: 2025-05-23 09:15:19]
-      [working dir: /software/matplotlib/3.9.2-gfbf-2024a]
-      [output and state saved to /tmp/eb-sec1umjh/run-shell-cmd-output/python-d3adb33f]
-&gt;&gt; command completed: exit 0, ran in &lt; 1s
-</code></pre>
+<div class="highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>&gt;&gt; running shell command:
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>      /software/Python/3.12.3-GCCcore-13.3.0/bin/python -c &quot;import matplotlib&quot;
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>      [started at: 2025-05-23 09:15:19]
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>      [working dir: /software/matplotlib/3.9.2-gfbf-2024a]
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>      [output and state saved to /tmp/eb-sec1umjh/run-shell-cmd-output/python-d3adb33f]
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>&gt;&gt; command completed: exit 0, ran in &lt; 1s
+</span></code></pre></div>
 <p>It now is just a single line per extension:</p>
-<pre><code>&gt;&gt; Extension sanity check command '/software/Python/3.12.3-GCCcore-13.3.0/bin/python -c &quot;import matplotlib&quot;': OK
-</code></pre>
+<div class="highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>&gt;&gt; Extension sanity check command &#39;/software/Python/3.12.3-GCCcore-13.3.0/bin/python -c &quot;import matplotlib&quot;&#39;: OK
+</span></code></pre></div>
 <p>Likewise for the <code>pip check</code> command that is run in the sanity check step when Python packages are being installed.
-This used to result in output like:</p>
-<pre><code>== sanity checking...
-  &gt;&gt; running shell command:
-        python -m pip check
-        [started at: 2025-05-23 10:26:11]
-        [working dir: /tmp/easybuild/Python/3.13.1/GCCcore-14.2.0]
-        [output and state saved to /tmp/eb-d_ec_z2f/run-shell-cmd-output/python-d3adb33f]
-  &gt;&gt; command completed: exit 0, ran in &lt; 1s
-</code></pre>
+This used to result in output like:
+<div class="highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>== sanity checking...
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  &gt;&gt; running shell command:
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>        python -m pip check
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>        [started at: 2025-05-23 10:26:11]
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        [working dir: /tmp/easybuild/Python/3.13.1/GCCcore-14.2.0]
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        [output and state saved to /tmp/eb-d_ec_z2f/run-shell-cmd-output/python-d3adb33f]
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>  &gt;&gt; command completed: exit 0, ran in &lt; 1s
+</span></code></pre></div></p>
 <p>Now, it's a lot shorter:</p>
-<pre><code>== sanity checking...
-  &gt;&gt; Check on requirements for installed Python packages with 'pip check': OK
-</code></pre>
+<div class="highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>== sanity checking...
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  &gt;&gt; Check on requirements for installed Python packages with &#39;pip check&#39;: OK
+</span></code></pre></div>
 <hr />
 <h2 id="2025a-common-toolchains">2025a common toolchains</h2>
 <p>Easyconfig files for the <code>2025a</code> update of the common toolchains <code>foss</code> and <code>intel</code> are included with EasyBuild v5.1.0.</p>
