@@ -5,3 +5,4 @@ mkdocs-git-revision-date-localized-plugin
 mkdocs-toc-sidebar-plugin
 mkdocs-macros-plugin
 mkdocs-rss-plugin
+pymdown-extensions
