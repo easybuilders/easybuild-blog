@@ -38,7 +38,9 @@ You can specify `--job-cores=X` to pick the size of your job.
 ## Passing SLURM flags
 
 What if your job needs a GPU partition, or specify a TRES?
-Set them via environment variables:
+Set them via environment variables:
+
+
 
 ```bash
 SBATCH_GPUS_PER_NODE=H100:1 eb -r --job-cores=8 Foobar-1.2.3-foss-2025b-CUDA-12.8.0.eb
@@ -64,9 +66,13 @@ but of course, many more exist.
 ## Collect build logs
 
 If you don't want job logs in your current working directory when you submit, collect them to one place using `--job-output=/path/to/logs` .
+If you have multiple cluster or architectures, you may wish to place them in specific locations.
 
-If you have multiple cluster or architectures, you may wish to place them in specific locations.
-Remember that you can set this via environment variables as well, e.g:
+Remember that you can set this via environment variables as well, e.g:
+
+
+Remember that you can set this via environment variables as well, e.g:
+
 ```bash
 export EASYBUILD_JOB_OUTPUT_DIR=$HOME/log_${CLUSTER_NAME}_${ARCH}/
 ```
@@ -80,19 +86,23 @@ If you have a problem build and the job logs isn't that useful, you can redirect
 ```
 
 
-## Monitoring the queue
+A handy alias to nicely keep track of your job queue can be made:
+
 
 ### Simple
-A handy alias to nicely keep track of your job queue can be made:
+A handy alias to nicely keep track of your job queue can be made:
+
 
 ```bash
 alias q='squeue --me -O jobid:10,tres-per-node:18,name:60,TimeUsed:10,reasonlist'
 alias wq='watch -c \"squeue --me -O jobid:10,tres-per-node:18,name:60,TimeUsed:10,reasonlist\"'
-```
+Using `bat`, we can even color the output nicely:
+
 
 ### Colorful
 
-Using `bat`, we can even color the output nicely:
+Using `bat`, we can even color the output nicely:
+
 
 ```bash
 alias wq="watch -c \"squeue -u c3-builder -O jobid:10,tres-per-node:18,name:60,TimeUsed:10,reasonlist | sed 's/^ *//g' | sed 's/ \+/,/g' | bat -f -l csv --style plain --theme=ansi | column -s, -t | bat --style grid\""
