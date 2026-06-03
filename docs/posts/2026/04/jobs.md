@@ -7,112 +7,107 @@ hide:
   - navigation
 ---
 
-# Building software with slurm jobs using EasyBuild
+# Building software with Slurm jobs using EasyBuild
 
-This blogpost serves as inspiration and get you started running jobs based on some of the stuff I run on my clusters.
+This blog post serves as inspiration, and aims to get you started running jobs based on some of the stuff I run on my clusters.
 
 Do you want to conveniently build modules in a hurry? Then you will love `--job`  combined with `-r`.
 
 <!-- more -->
 
-## What is does
+## What it does
 
-By specifying `eb -r --job Foobar-1.2.3-foss-2025b.eb` easybuild will
+By specifying `eb -r --job example.eb` easybuild will:
+
 1. Resolves all dependencies
 2. Pre-fetch all the sources
 3. Submit jobs for each easyconfig that needs to be built
    - Jobs have dependency tracking based on their dependencies
 
-And then you'll see
+And then you'll see something like:
 ```
 $ squeue --me
 
              JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
-           9015294      vera Foobar-1      you PD       0:00      1 (Dependency)
+           9015294      vera Example-1     you PD       0:00      1 (Dependency)
            9015292      vera Stuff-1.      you  R       0:06      1 node-01
            9015293      vera Thing-2.      you  R       0:06      1 node-02
 ```
 
-You can specify `--job-cores=X` to pick the size of your job.
+You can specify `--job-cores=X` when using `--job` to specify the size of your job.
 
-## Passing SLURM flags
+## Passing Slurm flags
 
 What if your job needs a GPU partition, or specify a TRES?
 Set them via environment variables:
 
-
-
-```bash
-SBATCH_GPUS_PER_NODE=H100:1 eb -r --job-cores=8 Foobar-1.2.3-foss-2025b-CUDA-12.8.0.eb
+```{ .bash .copy }
+SBATCH_GPUS_PER_NODE=H100:1 eb -r --job-cores=8 example-CUDA.eb
 ```
 
 In fact, why not make an alias for it?
 
-```bash
+```{ .bash .copy }
 alias buildH100='SBATCH_GPUS_PER_NODE=H100:1 eb -r --job'
 ```
 
 Depending on your cluster, you may find the following environment variables useful:
 
 ```bash
-SBATCH_GPUS_PER_NODE
-SBATCH_CONSTRAINT
-SBATCH_PARTITION
-SBATCH_ACCOUNT
+$SBATCH_GPUS_PER_NODE
+$SBATCH_CONSTRAINT
+$SBATCH_PARTITION
+$SBATCH_ACCOUNT
 ```
 
-but of course, many more exist.
+But of course, many more exist (see also [the `sbatch` documentation](https://slurm.schedmd.com/sbatch.html#SECTION_INPUT-ENVIRONMENT-VARIABLES)).
 
 ## Collect build logs
 
 If you don't want job logs in your current working directory when you submit, collect them to one place using `--job-output=/path/to/logs` .
 If you have multiple cluster or architectures, you may wish to place them in specific locations.
 
-Remember that you can set this via environment variables as well, e.g:
+Remember that you can set this via environment variables as well, for example:
 
-
-Remember that you can set this via environment variables as well, e.g:
-
-```bash
+```{ .bash .copy }
 export EASYBUILD_JOB_OUTPUT_DIR=$HOME/log_${CLUSTER_NAME}_${ARCH}/
 ```
 
 
 ## Debug failed builds
 
-If you have a problem build and the job logs isn't that useful, you can redirect tmpdir to persistent storage:
-```bash
---tmpdir=/your/centrestorage/path/eb-tmp
+If you have a problem build and the job logs isn't that useful, you can specify that the temporary directory
+that EasyBuild creates should be on persistent storage:
+
+```{ .bash .copy }
+--tmpdir=/your/path/on/central/storage/eb-tmp
 ```
 
+### Simple alias to show job queue
 
 A handy alias to nicely keep track of your job queue can be made:
 
-
-### Simple
-A handy alias to nicely keep track of your job queue can be made:
-
-
-```bash
+```{ .bash .copy }
 alias q='squeue --me -O jobid:10,tres-per-node:18,name:60,TimeUsed:10,reasonlist'
 alias wq='watch -c \"squeue --me -O jobid:10,tres-per-node:18,name:60,TimeUsed:10,reasonlist\"'
+```
+
+### Colorful alias to show job queue
+
 Using `bat`, we can even color the output nicely:
 
 
-### Colorful
-
-Using `bat`, we can even color the output nicely:
-
-
-```bash
+```{ .bash .copy }
 alias wq="watch -c \"squeue -u c3-builder -O jobid:10,tres-per-node:18,name:60,TimeUsed:10,reasonlist | sed 's/^ *//g' | sed 's/ \+/,/g' | bat -f -l csv --style plain --theme=ansi | column -s, -t | bat --style grid\""
 ```
 
-### Advanced
+### Advanced alias to show job queue
 
-Why not look at sacct as well? And color based on state?
+Why not look at `sacct` as well? And color based on state?
 
-```python linenums="1"
+Here's an example Python script that does exactly that:
+
+```{ .python linenums="1" .copy }
 #!/usr/bin/env python3
 
 import subprocess
@@ -120,7 +115,7 @@ from datetime import datetime, timedelta
 from rich.console import Console
 from rich.table import Table
 
-SACCT_LIMIT=timedelta(hours=12)
+SACCT_LIMIT = timedelta(hours=12)
 
 def run(cmd):
     return subprocess.check_output(cmd, text=True).strip().splitlines()
@@ -291,7 +286,7 @@ if __name__ == "__main__":
     main()
 ```
 
-example running with `watch --color q_advanced`:
+Example running with `watch --color q_advanced`:
 
 {{
 asciinema(
@@ -304,4 +299,3 @@ asciinema(
   ],
 )
 }}
-
