@@ -21,7 +21,7 @@ by representatives of the [MaX](https://max-centre.eu) and [MultiXscale](https:/
 </figure>
 
 The event featured presentations by core developers of all three projects, and allowed attendees
-from CINECA, MaX, [ECMWF](https://), and the [EBRAINS project](https://ebrains.eu)
+from CINECA, MaX, [ECMWF](https://www.ecmwf.int/), and the [EBRAINS project](https://ebrains.eu)
 to freshen up their knowledge, learn about recent developments, and gain extensive hands-on experience
 while having direct access to experts.
 
