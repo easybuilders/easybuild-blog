@@ -46,7 +46,7 @@ and high-level goals, and thanking attendees to actively participate.
 </figure>
 
 The first day focused on introductory presentations to all three projects.
-While most attendees were more familar with just one of the projects, they appreciated
+While most attendees were more familiar with just one of the projects, they appreciated
 being brought up-to-speed on recent developments of not just that particular project,
 but also other projects that focus on the ubiquitous challenge  of installing scientific
 software on HPC systems and beyond.
@@ -83,7 +83,7 @@ Slides and recordings of these presentations are available:
 - Introduction to Spack: [slides](EasyBuild-EESSI-Spack-hackathon-CINECA-May2026-03-Introduction-to-Spack-20260519.pdf), [recording](https://www.youtube.com/watch?v=Fh7XJdzUhAg&list=PLVu2nWpbBAIE&index=4)
 - Introduction to the EuroHPC Federation Platform: [slides](EasyBuild-EESSI-Spack-hackathon-CINECA-May2026-04-Introduction-to-EFP-20260519.pdf), [recording](https://www.youtube.com/watch?v=lSsLJkUpUT0&list=PLVu2nWpbBAIE&index=5)
 
-You can aslo watch the recording of the introduction to EasyBuild right here:
+You can also watch the recording of the introduction to EasyBuild right here:
 
 <div align="center">
 <iframe width="750" height="421" src="https://www.youtube.com/embed/1sfw8a64wFg?si=czcCi-K-1yc7NxK1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
