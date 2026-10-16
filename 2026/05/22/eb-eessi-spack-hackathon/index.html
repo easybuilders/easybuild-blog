@@ -1,0 +1,656 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Blog for EasyBuild (https://easybuild.io)">
+      
+      
+      
+        <link rel="canonical" href="https://blog.easybuild.io/2026/05/22/eb-eessi-spack-hackathon/">
+      
+      
+        <link rel="prev" href="../../../04/26/jobs/">
+      
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../../img/logos/EasyBuild.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>EasyBuild + EESSI + Spack event at CINECA - EasyBuild blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../asciinema/asciinema-player-3.10.0.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#easybuild-eessi-spack-event-at-cineca" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="EasyBuild blog" class="md-header__button md-logo" aria-label="EasyBuild blog" data-md-component="logo">
+      
+  <img src="../../../../img/logos/EasyBuild.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            EasyBuild blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              EasyBuild + EESSI + Spack event at CINECA
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="EasyBuild blog" class="md-nav__button md-logo" aria-label="EasyBuild blog" data-md-component="logo">
+      
+  <img src="../../../../img/logos/EasyBuild.png" alt="logo">
+
+    </a>
+    EasyBuild blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Asciinema
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Asciinema
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../asciinema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    asciinema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#day-1-introductions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Day 1: Introductions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#day-2-advanced-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Day 2: Advanced topics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#day-3-open-hands-on-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Day 3: Open hands-on session
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bonus-tour-of-ecmwf-datacenter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bonus: Tour of ECMWF datacenter
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../.." class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://avatars.githubusercontent.com/u/620876?v=4" alt="Kenneth Hoste">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Kenneth Hoste
+                        
+                      </strong>
+                      <br>
+                      HPC-UGent
+                    </span>
+                  </div>
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://avatars.githubusercontent.com/u/3840437?v=4" alt="Alan O'Cais">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Alan O'Cais
+                        
+                      </strong>
+                      <br>
+                      
+                    </span>
+                  </div>
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://avatars.githubusercontent.com/u/49882639?v=4" alt="Lara Peeters">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Lara Peeters
+                        
+                      </strong>
+                      <br>
+                      HPC-UGent
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2026-05-22 00:00:00+00:00" class="md-ellipsis">May 22, 2026</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              5 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+
+<h1 id="easybuild-eessi-spack-event-at-cineca">EasyBuild + EESSI + Spack event at CINECA</h1>
+<p>A joint <a href="https://easybuild.io">EasyBuild</a>, <a href="https://eessi.io">EESSI</a>, and <a href="https://spack.io">Spack</a> tutorial + hackathon
+was organised in Bologna (Italy) on 19-21 May 2026. It was hosted by <a href="https://www.cineca.it/">CINECA</a>, who operate
+the <a href="https://docs.hpc.cineca.it/hpc/leonardo.html">Leonardo</a> EuroHPC JU supercomputer, and was co-organised
+by representatives of the <a href="https://max-centre.eu">MaX</a> and <a href="https://multixscale.eu">MultiXscale</a> EuroHPC Centres-of-Excellence.</p>
+<figure>
+<img alt="" src="../../EB-EESSI-Spack-hackathon-group-picture.webp" width="50%" />
+</figure>
+<p>The event featured presentations by core developers of all three projects, and allowed attendees
+from CINECA, MaX, <a href="https://www.ecmwf.int/">ECMWF</a>, and the <a href="https://ebrains.eu">EBRAINS project</a>
+to freshen up their knowledge, learn about recent developments, and gain extensive hands-on experience
+while having direct access to experts.</p>
+<p>Although EasyBuild, EESSI, and Spack already have well-established communities for a long time, even over a decade
+for both EasyBuild and Spack, a joint event that brings together their communities like this was a first.</p>
+<p>Slides and recordings of all presentations are available.</p>
+<!-- more -->
+
+<figure>
+<img alt="" src="../../CINECA-wall.webp" width="60%" />
+</figure>
+<h2 id="day-1-introductions">Day 1: Introductions</h2>
+<p>Nicola, who took the lead on the local organisation, kickstarted the event with a short speech to outline the agenda
+and high-level goals, and thanking attendees to actively participate.</p>
+<figure>
+<img alt="" src="../../day1-opening-Nicola.webp" width="80%" />
+</figure>
+<p>The first day focused on introductory presentations to all three projects.
+While most attendees were more familiar with just one of the projects, they appreciated
+being brought up-to-speed on recent developments of not just that particular project,
+but also other projects that focus on the ubiquitous challenge  of installing scientific
+software on HPC systems and beyond.</p>
+<figure>
+<img alt="" src="../../day1-EESSI-intro.webp" width="80%" />
+</figure>
+<p>The questions and discussions that took place during and after each presentation quickly made it clear
+that a cross-project event like this encourages the exchange of knowledge and experience.
+Attendees felt more than comfortable to raise in-depth technical questions, and presenters were
+happy to go "off script" while providing answers, often doing impromptu hands-on demos along the way.</p>
+<figure>
+<img alt="" src="../../day1-Spack-intro.webp" width="80%" />
+</figure>
+<p>Attendees were also introduced to the <a href="https://my-eurohpc.eu">EuroHPC Federation Platform</a>,
+with particular focus to the <a href="https://docs.my-eurohpc.eu/software-catalog/">Federated Software Catalog</a> component,
+which is based on EESSI.</p>
+<p>Alan showed a hands-on demonstration of using the <a href="https://docs.my-eurohpc.eu/interactive">EFP Interactive</a> component, the federated Open OnDemand
+instance which, for example, allows for easily starting an interactive desktop to run graphical applications
+on each of the <a href="https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en">EuroHPC supercomputers</a>.</p>
+<figure>
+<img alt="" src="../../day1-EFP.webp" width="80%" />
+</figure>
+<p>Slides and recordings of these presentations are available:</p>
+<ul>
+<li>Introduction to EasyBuild: <a href="../../EasyBuild-EESSI-Spack-hackathon-CINECA-May2026-01-Introduction-to-EasyBuild-20260519.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=1sfw8a64wFg&amp;list=PLVu2nWpbBAIE&amp;index=2">recording</a></li>
+<li>Introduction to EESSI: <a href="../../EasyBuild-EESSI-Spack-hackathon-CINECA-May2026-02-Introduction-to-EESSI-20260519.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=CpFsJmeeFMg&amp;list=PLVu2nWpbBAIE&amp;index=3">recording</a></li>
+<li>Introduction to Spack: <a href="../../EasyBuild-EESSI-Spack-hackathon-CINECA-May2026-03-Introduction-to-Spack-20260519.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=Fh7XJdzUhAg&amp;list=PLVu2nWpbBAIE&amp;index=4">recording</a></li>
+<li>Introduction to the EuroHPC Federation Platform: <a href="../../EasyBuild-EESSI-Spack-hackathon-CINECA-May2026-04-Introduction-to-EFP-20260519.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=lSsLJkUpUT0&amp;list=PLVu2nWpbBAIE&amp;index=5">recording</a></li>
+</ul>
+<p>You can also watch the recording of the introduction to EasyBuild right here:</p>
+<div align="center">
+<iframe width="750" height="421" src="https://www.youtube.com/embed/1sfw8a64wFg?si=czcCi-K-1yc7NxK1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<h2 id="day-2-advanced-topics">Day 2: Advanced topics</h2>
+<p>On the second day of the event, we focused on topics beyond the basics:</p>
+<ul>
+<li>Workflow for adding additional software to EESSI (<a href="../../EasyBuild-EESSI-Spack-hackathon-CINECA-May2026-05-Workflow-Adding-Software-to-EESSI-20260520.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=vqzsuRX7uko&amp;list=PLVu2nWpbBAIE&amp;index=6">recording</a>)</li>
+<li>Software Deployment CI/CD pipelines in GitLab with Spack (<a href="../../EasyBuild-EESSI-Spack-hackathon-CINECA-May2026-06-Software-Deployment-CI-CD-Spack-20260520.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=9zWNWCaK74c&amp;list=PLVu2nWpbBAIE&amp;index=7">recording</a>)</li>
+<li>Installing software on top of EESSI (using EESSI-extend, buildenv) (<a href="../../EasyBuild-EESSI-Spack-hackathon-CINECA-May2026-07-Installing-software-on-top-of-EESSI-20260520.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=Oad7oaw69Fw&amp;list=PLVu2nWpbBAIE&amp;index=8">recording</a>)</li>
+<li>Using EESSI in Continuous Integration (CI) environments (<a href="../../EasyBuild-EESSI-Spack-hackathon-CINECA-May2026-08-EESSI-CI-20260520.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=XvTMIcTZ7Hs&amp;list=PLVu2nWpbBAIE&amp;index=9">recording</a>)</li>
+<li>Spack-driven Development Workflow (<a href="https://spack-tutorial.readthedocs.io/en/cineca26/tutorial_developer_workflows.html">presentation material</a>, <a href="https://www.youtube.com/watch?v=bcDkwwt25z4&amp;list=PLVu2nWpbBAIE&amp;index=10">recording</a>)</li>
+<li>Using Spack on top of EESSI (incl. in GitHub Actions) (<a href="../../EasyBuild-EESSI-Spack-hackathon-CINECA-May2026-10-Spack-on-top-of-EESSI-20260520.pdf">slides</a>, <a href="https://www.youtube.com/watch?v=dGL237xKKWg&amp;list=PLVu2nWpbBAIE&amp;index=11">recording</a>)</li>
+<li>Containerization of software with Spack (<a href="https://spack-tutorial.readthedocs.io/en/cineca26/tutorial_binary_cache.html">presentation material</a>, <a href="https://www.youtube.com/watch?v=D_yvIsnKwDY&amp;list=PLVu2nWpbBAIE&amp;index=12">recording</a>)</li>
+<li>Best practices for reproducible builds (<a href="https://spack-tutorial.readthedocs.io/en/cineca26/tutorial_reproducible_builds.html">presentation material</a>, <a href="https://www.youtube.com/watch?v=N6IsCBk_U3E&amp;list=PLVu2nWpbBAIE&amp;index=13">recording</a>)</li>
+</ul>
+<p>While the focus here seems to shift away from EasyBuild a bit, it is actually still prominently featured in several of these talks,
+in particular the one on installing software on top of EESSI, where EasyBuild is the primary tool of choice:</p>
+<div align="center">
+<iframe width="750" height="421" src="https://www.youtube.com/embed/Oad7oaw69Fw?si=vslXzw2gTnPTvza0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p>During the discussion and Q&amp;A that emerged naturally when covering these more advanced topics,
+the value of a joint event like this really became apparent. Ideas and counter-arguments were
+shared in collaborative spirit, and in-depth technical questions were raised by the attendees.</p>
+<p>After the series of presentations covering advanced topics, attendees were invited to get their hands dirty
+during the open hands-on session. Everyone focused on a particular problem or idea that they felt was most
+interesting to work on, and where needed they got help from the EasyBuild, EESSI, and/or Spack developers.</p>
+<figure>
+<img alt="" src="../../hackathon-01.webp" width="80%" />
+</figure>
+<h2 id="day-3-open-hands-on-session">Day 3: Open hands-on session</h2>
+<p>The last day of the event consisted solely of a "choose your own adventure" style hackathon.</p>
+<figure>
+<img alt="" src="../../hackathon-02.webp" width="100%" />
+</figure>
+<p>Attendees either continued where they left off the day before, or explored other ideas.
+Some worked in pairs, others preferred to work in isolation.</p>
+<p>The coffee and lunch breaks throughout the event invited attendees to discuss related topics even further.</p>
+<figure>
+<img alt="" src="../../hackathon-coffee-break.webp" width="60%" />
+</figure>
+<h2 id="bonus-tour-of-ecmwf-datacenter">Bonus: Tour of ECMWF datacenter</h2>
+<p>At the end of the third day, we were invited by Oriol to visit the <a href="https://www.ecmwf.int/">European Centre for Medium-Range Weather Forecasts (ECMWF)</a>
+datacenter located in Bologna. We were lucky enough to have Martin Palkovic, Director of Computing at ECMWF, be our tour guide.</p>
+<figure>
+<img alt="" src="../../ECMWF-visit-cluster.webp" width="100%" />
+</figure>
+<p>We walked by several of the four server rooms with identical setups, and visited the data rooms which housed
+massive amounts of tape drives and several tape robots that are part of the data archival facilities
+that ECMWF maintains.</p>
+<figure>
+<img alt="" src="../../ECMWF-visit-tapes.webp" width="80%" />
+</figure>
+<p>The backup power system and cooling infrastructure were nothing short of massive.
+This infrastructure is critical to the mission of ECMWF, which is to provide weather forecast updates
+for Europe <em>every 6 hours</em>.</p>
+<figure>
+<img alt="" src="../../ECMWF-visit-backup-power.webp" width="80%" />
+</figure>
+<p>The fact that ECMWF has never missed a forecast since they started the service
+in 1975, despite power cuts and unexpected downtime in parts of their infrastructure,
+is very impressive.</p>
+<p>We have visited many datacenters in the past years, but this was definitely one of the largest
+and most professional!</p>
+<p>Check out the video below to get a feeling of it yourself:</p>
+<div align="center">
+<iframe width="750" height="421" src="https://www.youtube.com/embed/iXC5lWDYR9o?si=xpCNnLFxATkXDPNh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../../asciinema/asciinema-player-3.10.0.min.js"></script>
+      
+    
+  </body>
+</html>

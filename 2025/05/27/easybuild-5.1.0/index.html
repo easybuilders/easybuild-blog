@@ -26,7 +26,7 @@
         <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../../../img/logos/EasyBuild.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -34,7 +34,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -552,14 +552,14 @@ by replacing the standard (noisy) trace output for commands executed during the 
 <p>The output for the "import" tests that are run for every extension that is being installed is now a lot cleaner.
 It used to be multiple lines with way too much detail for each extension:</p>
 <div class="highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>&gt;&gt; running shell command:
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>      /software/Python/3.12.3-GCCcore-13.3.0/bin/python -c &quot;import matplotlib&quot;
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>      /software/Python/3.12.3-GCCcore-13.3.0/bin/python -c "import matplotlib"
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>      [started at: 2025-05-23 09:15:19]
 </span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>      [working dir: /software/matplotlib/3.9.2-gfbf-2024a]
 </span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>      [output and state saved to /tmp/eb-sec1umjh/run-shell-cmd-output/python-d3adb33f]
 </span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>&gt;&gt; command completed: exit 0, ran in &lt; 1s
 </span></code></pre></div>
 <p>It now is just a single line per extension:</p>
-<div class="highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>&gt;&gt; Extension sanity check command &#39;/software/Python/3.12.3-GCCcore-13.3.0/bin/python -c &quot;import matplotlib&quot;&#39;: OK
+<div class="highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>&gt;&gt; Extension sanity check command '/software/Python/3.12.3-GCCcore-13.3.0/bin/python -c "import matplotlib"': OK
 </span></code></pre></div>
 <p>Likewise for the <code>pip check</code> command that is run in the sanity check step when Python packages are being installed.
 This used to result in output like:
@@ -573,7 +573,7 @@ This used to result in output like:
 </span></code></pre></div></p>
 <p>Now, it's a lot shorter:</p>
 <div class="highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>== sanity checking...
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  &gt;&gt; Check on requirements for installed Python packages with &#39;pip check&#39;: OK
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  &gt;&gt; Check on requirements for installed Python packages with 'pip check': OK
 </span></code></pre></div>
 <hr />
 <h2 id="2025a-common-toolchains">2025a common toolchains</h2>
@@ -655,7 +655,7 @@ v5.1.0:</p>
       <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="../../../../asciinema/asciinema-player-3.10.0.min.js"></script>
       
