@@ -11,9 +11,11 @@ extra_javascript:
   - asciinema/asciinema-player-3.10.0.min.js  # see https://github.com/asciinema/asciinema-player/releases
 nav:
 markdown_extensions:
+  - admonition
   - attr_list
   # support for using MarkDown in HTML
   - md_in_html
+  - pymdownx.details
   - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
