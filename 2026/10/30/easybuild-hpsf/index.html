@@ -1,0 +1,610 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Blog for EasyBuild (https://easybuild.io)">
+      
+      
+      
+        <link rel="canonical" href="https://blog.easybuild.io/2026/10/30/easybuild-hpsf/">
+      
+      
+        <link rel="prev" href="../../../05/22/eb-eessi-spack-hackathon/">
+      
+      
+      
+        
+      
+      
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../../../../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../../../../feed_rss_updated.xml">
+      
+      <link rel="icon" href="../../../../img/logos/EasyBuild.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>EasyBuild accepted to join HPSF at Core stage - EasyBuild blog</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.57a0d79d.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../asciinema/asciinema-player-3.10.0.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#easybuild-accepted-to-join-hpsf-at-core-stage" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="EasyBuild blog" class="md-header__button md-logo" aria-label="EasyBuild blog" data-md-component="logo">
+      
+  <img src="../../../../img/logos/EasyBuild.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            EasyBuild blog
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              EasyBuild accepted to join HPSF at Core stage
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="EasyBuild blog" class="md-nav__button md-logo" aria-label="EasyBuild blog" data-md-component="logo">
+      
+  <img src="../../../../img/logos/EasyBuild.png" alt="logo">
+
+    </a>
+    EasyBuild blog
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Asciinema
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Asciinema
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../asciinema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    asciinema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-happened-so-far" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What happened so far?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What happened so far?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project-proposal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project proposal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assessment-by-hpsf-tac" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assessment by HPSF TAC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vote-result" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vote result
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-is-easybuild-joining-hpsf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why is EasyBuild joining HPSF?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's next?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+  <div class="md-content md-content--post" data-md-component="content">
+    <div class="md-sidebar md-sidebar--post" data-md-component="sidebar" data-md-type="navigation">
+      <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner md-post">
+          <nav class="md-nav md-nav--primary">
+            <div class="md-post__back">
+              <div class="md-nav__title md-nav__container">
+                <a href="../../../.." class="md-nav__link">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+                  <span class="md-ellipsis">
+                    Back to index
+                  </span>
+                </a>
+              </div>
+            </div>
+            
+              <div class="md-post__authors md-typeset">
+                
+                  <div class="md-profile md-post__profile">
+                    <span class="md-author md-author--long">
+                      <img src="https://avatars.githubusercontent.com/u/620876?v=4" alt="Kenneth Hoste">
+                    </span>
+                    <span class="md-profile__description">
+                      <strong>
+                        
+                          Kenneth Hoste
+                        
+                      </strong>
+                      <br>
+                      HPC-UGent
+                    </span>
+                  </div>
+                
+              </div>
+            
+            <ul class="md-post__meta md-nav__list">
+              <li class="md-nav__item md-nav__item--section">
+                <div class="md-post__title">
+                  <span class="md-ellipsis">
+                    Metadata
+                  </span>
+                </div>
+                <nav class="md-nav">
+                  <ul class="md-nav__list">
+                    <li class="md-nav__item">
+                      <div class="md-nav__link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
+                        <time datetime="2026-10-30 00:00:00+00:00" class="md-ellipsis">October 30, 2026</time>
+                      </div>
+                    </li>
+                    
+                    
+                    
+                      
+                      <li class="md-nav__item">
+                        <div class="md-nav__link">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
+                          <span class="md-ellipsis">
+                            
+                              4 min read
+                            
+                          </span>
+                        </div>
+                      </li>
+                    
+                  </ul>
+                </nav>
+              </li>
+            </ul>
+            
+          </nav>
+          
+        </div>
+      </div>
+    </div>
+    <article class="md-content__inner md-typeset">
+      
+        
+  
+
+
+
+
+<h1 id="easybuild-accepted-to-join-hpsf-at-core-stage">EasyBuild accepted to join HPSF at <em>Core</em> stage</h1>
+<figure>
+<img alt="" src="../../hpsf-logo.webp" width="50%" />
+</figure>
+<p>EasyBuild has been accepted to join the <a href="https://hpsf.io/" target="_blank">High Performance
+Software Foundation (HPSF)</a>. The vote of the HPSF Technical Advisory Council to let EasyBuild
+join HPSF at the <em>Core</em> stage was overwhelmingly positive.</p>
+<p>In this blog post we outline what has happened so far, why we are joining HPSF, and what's next.</p>
+<!-- more -->
+
+<h2 id="what-happened-so-far">What happened so far?</h2>
+<h3 id="project-proposal">Project proposal</h3>
+<p>On 11 September 2026, we created a <a href="https://github.com/hpsfoundation/tac/issues/103
+" target="_blank">project proposal for EasyBuild to join HPSF</a>.</p>
+<p>In the proposal the case was made for EasyBuild to join HPSF at the <em>Core</em> stage,
+which is the highest possible stage an HPSF project can be in.</p>
+<p>The requirements for the different stages (Emerging, Established, Core) are
+<a href="https://github.com/hpsfoundation/tac/blob/main/lifecycle_policy.md" target="_blank">
+documented in the HPSF Project Lifecycle Policies document</a>.
+For more information on the HPSF project lifecycle, see the recent HPSF blog post
+on <a href="https://hpsf.io/blog/2026/kokkos-graduates-to-become-a-core-project-of-the-hpsf/" target="_blank">
+Kokkos graduating from the <em>Emerging</em> to the <em>Core</em> stage</a>.</p>
+<h3 id="assessment-by-hpsf-tac">Assessment by HPSF TAC</h3>
+<p>The project proposal initiated a process that started with an assessment by the <a href="https://hpsf.io/tac/">HPSF Technical Advisory Council (TAC)</a>
+on whether EasyBuild is aligned with the mission of HPSF, and how mature the project is in terms of development practices,
+release management, adoption, community, governance, etc.</p>
+<p>We were invited to present EasyBuild to the HPSF TAC on 1 October 2026,
+to further motivate our project proposal.
+The <a href="https://zoom-lfx.platform.linuxfoundation.org/meetings/hpsf?view=week" target="_blank">HPSF TAC meetings</a>
+are open to the public: anyone interested can attend them (virtually, via Zoom).</p>
+<p>Our presentation on EasyBuild applying to become an HPSF project was recorded.
+The HPSF TAC graciously allowed us to make the recording
+publicly available via our YouTube channel:</p>
+<div align="center">
+<iframe width="750" height="425" src="https://www.youtube.com/embed/J3fbfBmnsvg?si=QQkF9Lnrv5OWlsSE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p>If you prefer to skim the slides over watching the presentation, you can <a href="../../EasyBuild-HPSF-TAC-20261001.pdf">download them here</a>.</p>
+<h3 id="vote-result">Vote result</h3>
+<p>On 22 October 2026 the results of the (private) vote by the HPSF TAC on whether EasyBuild is eligible for joining HPSF at the Core stage was announced.
+The result, which can be consulted in the <a href="https://github.com/hpsfoundation/tac/issues/103#issuecomment-6345570619" target="_blank">project proposal</a>,
+was overwhelmly positive.</p>
+<p><strong>EasyBuild was approved across the board to join HPSF at the <em>Core</em> stage</strong> by the HPSF TAC members who joined the vote.</p>
+<h2 id="why-is-easybuild-joining-hpsf">Why is EasyBuild joining HPSF?</h2>
+<p>The High Performance Software Foundation (HPSF) was <a href="https://www.linuxfoundation.org/press/linux-foundation-announces-the-launch-of-the-high-performance-software-foundation" target="_blank">kickstarted in May 2024</a>
+as a non-profit foundation under the umbrella of the Linux Foundation to support open source software projects in HPC, and help them grow.</p>
+<div class="admonition quote">
+<p class="admonition-title">Quote: HPSF mission</p>
+<p><em>HPSF supports projects that advance portable software for diverse hardware by increasing adoption, aiding community growth, and enabling development efforts.</em></p>
+<p><em>HPSF is lowering barriers to productive use of today’s and future high performance computing systems.</em></p>
+<p><em>(quote from <a href="https://hpsf.io">HPSF website</a>, Oct'26)</em></p>
+</div>
+<p>Since its inception various <a href="https://hpsf.io/projects/" target="_blank">projects</a> have been onboarded into HPSF.</p>
+<p>The most prominent ones are <a href="https://spack.io" target="_blank">Spack</a> and <a href="https://kokkos.org" target="_blank">Kokkos</a>,
+which are currently the only HPSF projects at the Core stage (<a href="https://www.open-mpi.org/" target="_blank">Open MPI</a>
+and <a href="https://www.lammps.org/" target="_blank">LAMMPS</a> will soon join them, cfr. their approved project proposal
+<a href="https://github.com/hpsfoundation/tac/issues/93" target="_blank">here</a>
+and <a href="https://github.com/hpsfoundation/tac/issues/94" target="_blank">here</a>, respectively).
+Other (soon to be) HPSF projects are already part of our toolbox, like <a href="https://apptainer.org/" target="_blank">Apptainer</a>
+and <a href="https://envmodules.io/" target="_blank">Environment Modules</a>,
+or can be installed with EasyBuild already, like <a href="https://amrex-codes.github.io/amrex/" target="_blank">AMReX</a>,
+<a href="http://flux-framework.org/" target="_blank">Flux</a>, <a href="https://reframe-hpc.readthedocs.io/" target="_blank">ReFrame</a>,
+and <a href="https://trilinos.org/" target="_blank">Trilinos</a>.</p>
+<p>Over the recent months we have been informally gathering feedback on the idea of joining HPSF in the EasyBuild community,
+and the response was pretty much unanimously in favor of doing so.</p>
+<p>The mission of HPSF, quoted above, aligns particularly well with the spirit of the EasyBuild project: lowering the barriers for efficiently using
+High-Performance Computing infrastructure, collaborating on the ubiquitous problem of getting scientific software installed (without cutting
+corners on software performance), actively contributing to projects when we have a fix for problems we encounter,
+and engaging with our user community as well as the broader HPC community (see for example the <a href="https://easybuild.io/eum" target="_blank">EasyBuild User Meeting</a>).</p>
+<p>We feel that EasyBuild can contribute substantially to HPSF and its member projects in various ways,
+as well as benefit directly and indirectly from the increased interaction with other open source projects in the HPC community.</p>
+<p>In addition, HPSF also supports member projects in various ways, by providing access to tools and resources
+regarding event organisation, CI/CD, benchmarking, etc. For more details on this, see the recent
+<a href="https://ideas-productivity.org/events/hpcbp-101-hpsf" target="_blank">IDEAS webinar introducing HPSF</a>.</p>
+<h2 id="whats-next">What's next?</h2>
+<p>Getting approval from the HPSF TAC to join HPSF as a project is just the first step towards actually becoming an HPSF project.
+The next major step is to make EasyBuild a <a href="https://linuxfoundation.eu/" target="_blank">Linux Foundation (Europe)</a> project,
+which is a prerequisite for becoming an HPSF project.</p>
+<p>We will work on this in the coming weeks and months, and hope to wrap up that part of the process soon.</p>
+<p>Beyond that, we plan actively attend <a href="https://hpsf.io/event/hpsf-conference-2027/" target="_blank">HPSFcon 2027</a>,
+which will take place in Montréal (Canada) during the week of 12-16 April 2027.
+How convenient that the <a href="https://easybuild.io/eum27/" target="_blank">12th EasyBuild User Meeting (EUM'27)</a>
+will take place in Montréal shortly after (19-21 April 2027)... <img alt="😎" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f60e.svg" title=":sunglasses:" /></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+      
+    </article>
+  </div>
+
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": [], "search": "../../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+        <script src="../../../../asciinema/asciinema-player-3.10.0.min.js"></script>
+      
+    
+  </body>
+</html>
