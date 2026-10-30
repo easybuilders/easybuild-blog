@@ -15,7 +15,7 @@ hide:
 
 EasyBuild has been accepted to join the <a href="https://hpsf.io/" target="_blank">High Performance
 Software Foundation (HPSF)</a>. The vote of the HPSF Technical Advisory Council to let EasyBuild
-join HPSF at the *Core* stage was overwhelmly positive.
+join HPSF at the *Core* stage was overwhelmingly positive.
 
 In this blog post we outline what has happened so far, why we are joining HPSF, and what's next.
 
@@ -51,7 +51,7 @@ The <a href="https://zoom-lfx.platform.linuxfoundation.org/meetings/hpsf?view=we
 are open to the public: anyone interested can attend them (virtually, via Zoom).
 
 Our presentation on EasyBuild applying to become an HPSF project was recorded.
-The HPSF TAC gratiously allowed us to make the recording
+The HPSF TAC graciously allowed us to make the recording
 publicly available via our YouTube channel:
 
 <div align="center">
